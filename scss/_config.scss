@@ -1,0 +1,14 @@
+$primary-color: #6bb9df;
+$secondary-color: #2e2e2e;
+$light-color: #f4f4f4;
+$medium-color: #444;
+$dark-color: #2e2e2e;
+
+// Set Text Color
+@function set-text-color($color) {
+    @if (lightness($color) > 50) {
+        @return #000000;
+    }   @else   {
+        @return #ffffff;
+    }
+}

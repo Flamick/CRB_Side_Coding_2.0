@@ -1,0 +1,110 @@
+@import "config";
+
+.container {
+    max-width: 1280px;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+// Background colors
+.bg {
+    &-primary {
+        background: $primary-color;
+        color: set-text-color($primary-color);
+    }
+
+    &-secondary {
+        background: $secondary-color;
+        color: set-text-color($secondary-color);
+    }
+
+    &-light {
+        background: $light-color;
+        color: set-text-color($light-color);
+    }
+
+    &-medium {
+        background: $medium-color;
+        color: set-text-color($medium-color);
+    }
+
+    &-dark {
+        background: $dark-color;
+        color: set-text-color($dark-color);
+    }
+}
+
+// Buttons
+%btn-shared {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.btn {
+    &-primary {
+        @extend %btn-shared;
+        color: $light-color;
+        background: $primary-color;
+
+        &:hover {
+            color: set-text-color($dark-color);
+            background: $dark-color;
+        }
+    }
+
+    &-light {
+        @extend %btn-shared;
+        color: set-text-color($light-color);
+        background: $light-color;
+
+        &:hover {
+            color: $light-color;
+            background: $dark-color;
+        }
+    }
+
+    &-medium {
+        @extend %btn-shared;
+        color: set-text-color($medium-color);
+        background: $medium-color;
+
+        &:hover {
+            color: set-text-color($dark-color);
+            background: $dark-color;
+        }
+    }
+
+    &-dark {
+        @extend %btn-shared;
+        color: set-text-color($dark-color);
+        background: $dark-color;
+
+        &:hover {
+            color: set-text-color($light-color);
+            background: $light-color;
+        }
+    }
+}
+
+.bottom-line {
+    height: 2px;
+    width: 5rem;
+    background: $primary-color;
+    display: block;
+    margin: 0 auto 1rem auto;
+}
+
+.lead {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
