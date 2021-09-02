@@ -59,7 +59,7 @@ body {
 #mobile-nav {
   background: #373D40;
   padding: .4rem 0;
-  z-index: 3;
+  z-index: 4;
   position: sticky;
   top: 0; }
   #mobile-nav .flex-container {
@@ -81,7 +81,7 @@ body {
   height: 40px;
   cursor: pointer;
   transition: all .5s ease-in-out;
-  z-index: 3; }
+  z-index: 4; }
 
 .menu-btn__burger {
   width: 30px;
@@ -125,7 +125,7 @@ body {
   left: 100%;
   width: 100%;
   min-height: 100vh;
-  z-index: 2;
+  z-index: 3;
   background-color: #373D40;
   transition: all .5s ease-in-out; }
   #mobile-menu ul {

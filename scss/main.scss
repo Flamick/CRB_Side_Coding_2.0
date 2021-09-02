@@ -34,7 +34,7 @@ body {
 #mobile-nav {
     background: $medium-complimentary;
     padding: .4rem 0;
-    z-index: 3;
+    z-index: 4;
     position: sticky;
     top: 0;
 
@@ -64,7 +64,7 @@ body {
     height: 40px;
     cursor: pointer;
     transition: all .5s ease-in-out;
-    z-index: 3;
+    z-index: 4;
 }
 
 .menu-btn__burger {
@@ -117,7 +117,7 @@ body {
     left: 100%;
     width: 100%;
     min-height: 100vh;
-    z-index: 2;
+    z-index: 3;
     background-color: $medium-complimentary;
     transition: all .5s ease-in-out;
 
