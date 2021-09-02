@@ -50,6 +50,7 @@ body {
 
     p {
         color: $light-color;
+        font-size: 1.6rem;
     }
 
     
@@ -224,7 +225,7 @@ body {
                 font-size: 1.1rem;
                 font-weight: 400;
                 padding: 3rem 0;
-                line-height: 1.3rem;
+                line-height: 1.4rem;
             }
         }
     }
@@ -232,5 +233,27 @@ body {
     &-hero > * {
         z-index: 2;
         position: relative;
+    }
+
+    // Home:Describe
+    &-describe {
+        padding: 3rem 0;
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto, 1fr);
+        }
+
+        .what-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+                padding: 2rem 0;
+                
+            }
+        }
     }
 }

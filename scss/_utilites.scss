@@ -10,20 +10,27 @@
 }
 
 .small-logo-title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .logo-text {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .small-text-logo {
-    font-size: .8rem;
+    font-size: .9rem;
     font-weight: 600;
 }
 
 .primary-color-text {
     color: $primary-color;
+}
+
+// background colors
+.bg-dark {
+    color: $light-color;
+    background: $dark-color;
 }
 
 // Buttons
@@ -46,4 +53,12 @@
         color: $medium-complimentary;
         background: $light-color;
     }
+}
+
+.bottom-line {
+    height: 2px;
+    width: 7rem;
+    background: $primary-color;
+    display: block;
+    margin: 0 auto 1rem auto;
 }

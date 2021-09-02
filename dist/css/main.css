@@ -8,17 +8,22 @@
   font-size: 1.4rem; }
 
 .small-logo-title {
-  font-size: 1.2rem; }
+  font-size: 1.3rem;
+  font-weight: 600; }
 
 .logo-text {
-  font-weight: 500; }
+  font-weight: 600; }
 
 .small-text-logo {
-  font-size: .8rem;
+  font-size: .9rem;
   font-weight: 600; }
 
 .primary-color-text {
   color: #6DA4BF; }
+
+.bg-dark {
+  color: #f4f4f4;
+  background: #333; }
 
 .btn-light {
   display: inline-block;
@@ -35,6 +40,13 @@
 .btn-light {
   color: #373D40;
   background: #f4f4f4; }
+
+.bottom-line {
+  height: 2px;
+  width: 7rem;
+  background: #6DA4BF;
+  display: block;
+  margin: 0 auto 1rem auto; }
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -70,7 +82,8 @@ body {
 .logo {
   z-index: 3; }
   .logo p {
-    color: #f4f4f4; }
+    color: #f4f4f4;
+    font-size: 1.6rem; }
 
 .menu-btn {
   position: relative;
@@ -199,8 +212,21 @@ body {
     font-size: 1.1rem;
     font-weight: 400;
     padding: 3rem 0;
-    line-height: 1.3rem; }
+    line-height: 1.4rem; }
 
 #home-hero > * {
   z-index: 2;
   position: relative; }
+
+#home-describe {
+  padding: 3rem 0; }
+  #home-describe .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto, 1fr); }
+  #home-describe .what-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #home-describe .what-content h3 {
+      padding: 2rem 0; }
