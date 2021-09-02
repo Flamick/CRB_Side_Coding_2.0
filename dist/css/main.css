@@ -30,7 +30,7 @@
   border-radius: 10px;
   font-size: 1.2rem;
   text-align: center;
-  font-weight: 500; }
+  font-weight: 600; }
 
 .btn-light {
   color: #373D40;
@@ -133,12 +133,11 @@ body {
   #mobile-menu a {
     text-decoration: none;
     display: block;
-    max-width: 200px;
     margin: 0 auto 1.4rem;
     text-align: center;
     padding: .8rem 1rem;
     color: #f4f4f4;
-    font-size: 1.2rem; }
+    font-size: 1.3rem; }
   #mobile-menu.open {
     left: 0; }
 
@@ -186,17 +185,18 @@ body {
     position: absolute;
     left: 0;
     top: 0;
-    background-color: rgba(51, 51, 51, 0.8);
+    background-color: rgba(51, 51, 51, 0.85);
     height: 100%;
     width: 100%;
     z-index: 0; }
   #home-hero .container {
     width: 80%; }
   #home-hero .hero-content h1 {
-    line-height: 2.3rem;
-    font-weight: 500; }
+    line-height: 2.5rem;
+    font-weight: 500;
+    font-size: 2rem; }
   #home-hero .hero-content h2 {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 400;
     padding: 3rem 0;
     line-height: 1.3rem; }

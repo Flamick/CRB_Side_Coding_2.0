@@ -129,12 +129,11 @@ body {
     a {
         text-decoration: none;
         display: block;
-        max-width: 200px;
         margin: 0 auto 1.4rem;
         text-align: center;
         padding: .8rem 1rem;
         color: $light-color;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     &.open {
@@ -187,48 +186,51 @@ body {
 }
 
 // Home:hero
-#home-hero {
-    background: url("../img/header-home.jpg") no-repeat center center/cover;
-    position: relative;
-    color: $light-color;
-    padding: 5rem 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#home {
+    &-hero {
+        background: url("../img/header-home.jpg") no-repeat center center/cover;
+        position: relative;
+        color: $light-color;
+        padding: 5rem 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-    &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        background-color: rgba($color: #333, $alpha: 0.8);
-        height: 100%;
-        width: 100%;
-        z-index: 0;
-    }
-
-    .container {
-        width: 80%;
-    }
-
-    .hero-content {
-        h1 {
-            line-height: 2.3rem;
-            font-weight: 500;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: rgba($color: #333, $alpha: 0.85);
+            height: 100%;
+            width: 100%;
+            z-index: 0;
         }
 
-        h2 {
-            font-size: 1rem;
-            font-weight: 400;
-            padding: 3rem 0;
-            line-height: 1.3rem;
+        .container {
+            width: 80%;
+        }
+
+        .hero-content {
+            h1 {
+                line-height: 2.5rem;
+                font-weight: 500;
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+                font-weight: 400;
+                padding: 3rem 0;
+                line-height: 1.3rem;
+            }
         }
     }
-}
 
-#home-hero > * {
-    z-index: 2;
-    position: relative;
+    &-hero > * {
+        z-index: 2;
+        position: relative;
+    }
 }
