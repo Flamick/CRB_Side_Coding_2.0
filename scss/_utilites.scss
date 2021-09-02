@@ -4,6 +4,7 @@
     margin: 0 auto;
 }
 
+// Text modifications
 .logo-title {
     font-weight: 500;
     font-size: 1.4rem;
@@ -33,6 +34,16 @@
     background: $dark-color;
 }
 
+.bg-medium {
+    color: $light-color;
+    background: $medium-complimentary;
+}
+
+.bg-light {
+    color: $dark-color;
+    background: $light-complimentary;
+}
+
 // Buttons
 %btn-shared {
     display: inline-block;
@@ -53,6 +64,12 @@
         color: $medium-complimentary;
         background: $light-color;
     }
+
+    &-dark {
+        @extend %btn-shared;
+        color: $light-color;
+        background: $medium-complimentary;
+    }
 }
 
 .bottom-line {
@@ -60,5 +77,5 @@
     width: 7rem;
     background: $primary-color;
     display: block;
-    margin: 0 auto 1rem auto;
+    margin: 0 auto;
 }

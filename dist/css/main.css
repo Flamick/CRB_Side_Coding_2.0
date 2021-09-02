@@ -25,7 +25,15 @@
   color: #f4f4f4;
   background: #333; }
 
-.btn-light {
+.bg-medium {
+  color: #f4f4f4;
+  background: #373D40; }
+
+.bg-light {
+  color: #333;
+  background: #B0C1CA; }
+
+.btn-light, .btn-dark {
   display: inline-block;
   text-decoration: none;
   padding: 1rem 1.5rem;
@@ -41,12 +49,16 @@
   color: #373D40;
   background: #f4f4f4; }
 
+.btn-dark {
+  color: #f4f4f4;
+  background: #373D40; }
+
 .bottom-line {
   height: 2px;
   width: 7rem;
   background: #6DA4BF;
   display: block;
-  margin: 0 auto 1rem auto; }
+  margin: 0 auto; }
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -66,7 +78,15 @@ a {
     text-decoration: none; }
 
 body {
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  color: #333; }
+
+h3 {
+  font-size: 1.2rem;
+  width: 90%; }
+
+p {
+  line-height: 1.3rem; }
 
 #mobile-nav {
   background: #373D40;
@@ -218,15 +238,61 @@ body {
   z-index: 2;
   position: relative; }
 
-#home-describe {
-  padding: 3rem 0; }
-  #home-describe .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto, 1fr); }
-  #home-describe .what-content {
+#home-describe .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto, 1fr); }
+
+#home-describe .what-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0; }
+  #home-describe .what-content h3 {
+    padding: 1rem 0;
+    text-align: center;
+    width: 90%; }
+    #home-describe .what-content h3 .small-text-logo {
+      font-size: .9rem;
+      font-weight: 800; }
+  #home-describe .what-content p {
+    padding: 1rem 0; }
+  #home-describe .what-content ol {
+    padding: 1rem; }
+  #home-describe .what-content li {
+    padding: .5rem 0; }
+
+#home-describe .what-side-content {
+  padding: 2rem 0 3rem 0; }
+  #home-describe .what-side-content .flex-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    #home-describe .what-content h3 {
-      padding: 2rem 0; }
+  #home-describe .what-side-content h3 {
+    padding: 1rem 0;
+    text-align: center; }
+  #home-describe .what-side-content ul {
+    list-style: disc;
+    padding: 1rem;
+    line-height: 1.6rem; }
+  #home-describe .what-side-content .form-field {
+    padding: .5rem 0; }
+  #home-describe .what-side-content input {
+    width: 100%;
+    padding: .3rem .3rem;
+    border: 3px #fff solid;
+    border-radius: 3px;
+    font-size: 1rem; }
+    #home-describe .what-side-content input:focus {
+      outline: none;
+      border-color: #6DA4BF; }
+  #home-describe .what-side-content label:after {
+    content: " *";
+    color: red; }
+  #home-describe .what-side-content .reassure {
+    font-size: .75rem;
+    text-align: center;
+    padding: 1rem 0; }
+  #home-describe .what-side-content button {
+    width: 100%; }

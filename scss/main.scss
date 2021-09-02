@@ -26,7 +26,19 @@ a {
 
 body {
     font-family: $primary-font;
+    color: $dark-color;
+    
 }
+
+h3 {
+    font-size: 1.2rem;
+    width: 90%;
+}
+
+p {
+    line-height: 1.3rem;
+}
+
 
 
 // Navbar
@@ -237,8 +249,6 @@ body {
 
     // Home:Describe
     &-describe {
-        padding: 3rem 0;
-
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto, 1fr);
@@ -249,11 +259,87 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding: 2rem 0;
 
             h3 {
-                padding: 2rem 0;
-                
+                padding: 1rem 0;
+                text-align: center;
+                width: 90%;
+
+                .small-text-logo {
+                    font-size: .9rem;
+                    font-weight: 800;
+                }
+            }
+
+            p {
+                padding: 1rem 0;
+            }
+
+            ol {
+                padding: 1rem;
+            }
+
+            li {
+                padding: .5rem 0;
             }
         }
-    }
+
+        // What side
+        .what-side-content {
+            padding: 2rem 0 3rem 0;
+
+            .flex-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+            }
+            
+            h3 {
+                padding: 1rem 0;
+                text-align: center;
+            }
+
+            ul {
+                list-style: disc;
+                padding: 1rem;
+                line-height: 1.6rem;
+            }
+
+            .form-field {
+                padding: .5rem 0;
+            }
+
+            input {
+                width: 100%;
+                padding: .3rem .3rem;
+                border: 3px #fff solid;
+                border-radius: 3px;
+                font-size: 1rem;
+
+                &:focus {
+                    outline: none;
+                    border-color: $primary-color;
+                }
+            }
+
+            label:after {
+                content: " *";
+                color: red;
+            }
+
+            .reassure {
+                font-size: .75rem;
+                text-align: center;
+                padding: 1rem 0;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    }  
 }
+
