@@ -1,0 +1,23 @@
+{
+  "name": "CRB_Side_Coding_2.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flamick/CRB_Side_Coding_2.0.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Flamick/CRB_Side_Coding_2.0/issues"
+  },
+  "homepage": "https://github.com/Flamick/CRB_Side_Coding_2.0#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
