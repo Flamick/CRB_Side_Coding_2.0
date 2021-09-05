@@ -91,7 +91,7 @@
                 <div class="container">
                     <div class="flex-container">
                         <h3>Interested? Just complete this quick answer form.</h3>
-                        <p>After receiving your information, we will contact you to find out what it is you need from the project and provide you with the following information:</p>
+                        <p>Tell us a little about your project. After receiving your information, we will contact you to find out what it is you need from the project and provide you with the following information:</p>
                         <div>
                             <ul>
                                 <li>The model (What the project should look like)</li>
@@ -117,9 +117,14 @@
                                     <label for="email">Email Address:</label>
                                     <input type="email" name="email" id="email" required>
                                 </div>
+                                <div class="g-recaptcha" data-sitekey="6LeTmEYcAAAAAPpiEVqfSxaY7cRghjb1OJwJl25C"></div>
+                                <div id="html_element"></div>
                                 <p class="reassure">*Your information will not be sold, shared, or rented*</p>
                                 <button type="submit" class="btn btn-dark">Get Answers</button>
                                 </form>
+                                <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+                                async defer>
+                                </script>
                         </div>
                     </div>
                 </div>
@@ -128,7 +133,12 @@
     </section>
 
     
-
-    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        var onloadCallback = function() {
+            grecaptcha.render('html_element', {
+            'sitekey' : '6LeTmEYcAAAAAPpiEVqfSxaY7cRghjb1OJwJl25C'
+            });
+        };
+        </script>
 </body>
 </html>
