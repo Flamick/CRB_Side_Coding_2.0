@@ -100,7 +100,7 @@
                                 <li>Key Deliverables (What you should expect the final outcome to be)</li>
                                 <li>The timeline (When to expect the finished product)</li>
                             </ul>
-                            <form id="contact-form" class="side-form" action="https://formspree.io/f/mpzkkdgz" method="POST" accept-charset="UTF-8" >
+                            <form id="contact-form" class="side-form" action="submit.php" method="POST" accept-charset="UTF-8" enctype=”multipart/form-data”>
                                 <div class="form-field">
                                     <label for="first-name">First Name:</label>
                                     <input type="text" name="first-name" id="first-name" required>
@@ -119,7 +119,7 @@
                                 </div>
                                 <div class="g-recaptcha" data-sitekey="6LeTmEYcAAAAAPpiEVqfSxaY7cRghjb1OJwJl25C"></div>
                                 <p class="reassure">*Your information will not be sold, shared, or rented*</p>
-                                <input type="submit" value="Get Answers" class="btn btn-dark btn-form"></input>
+                                <input type="submit" name="submit" value="Get Answers" class="btn btn-dark btn-form"></input>
                                 </form>
                         </div>
                     </div>
@@ -128,6 +128,6 @@
         </div>
     </section>
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
