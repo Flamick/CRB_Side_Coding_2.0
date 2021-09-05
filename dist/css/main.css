@@ -497,7 +497,7 @@ p {
       position: relative;
       transition: all 350ms ease;
       transition-duration: 350ms; }
-      #home-describe #process .process-icon:active, #home-describe #process .process-icon:focus, #home-describe #process .process-icon:hover, #home-describe #process .process-icon.clicked {
+      #home-describe #process .process-icon.clicked {
         border-radius: 5px;
         z-index: 3;
         transform: scale(3) translateY(20px);
@@ -505,24 +505,24 @@ p {
         height: 80px;
         width: 100px;
         border: 2px #6DA4BF solid; }
-        #home-describe #process .process-icon:active .process-step, #home-describe #process .process-icon:focus .process-step, #home-describe #process .process-icon:hover .process-step, #home-describe #process .process-icon.clicked .process-step {
+        #home-describe #process .process-icon.clicked .process-step {
           transform: scale(0); }
-        #home-describe #process .process-icon:active #effect-1, #home-describe #process .process-icon:focus #effect-1, #home-describe #process .process-icon:hover #effect-1, #home-describe #process .process-icon.clicked #effect-1 {
+        #home-describe #process .process-icon.clicked #effect-1 {
           visibility: visible;
           transform: translateY(-175%);
           transition-delay: 320ms;
           text-align: left; }
-        #home-describe #process .process-icon:active #effect-2, #home-describe #process .process-icon:focus #effect-2, #home-describe #process .process-icon:hover #effect-2, #home-describe #process .process-icon.clicked #effect-2 {
+        #home-describe #process .process-icon.clicked #effect-2 {
           visibility: visible;
           transform: translateY(-175%);
           transition-delay: 320ms;
           text-align: left; }
-        #home-describe #process .process-icon:active #effect-3, #home-describe #process .process-icon:focus #effect-3, #home-describe #process .process-icon:hover #effect-3, #home-describe #process .process-icon.clicked #effect-3 {
+        #home-describe #process .process-icon.clicked #effect-3 {
           visibility: visible;
           transform: translateY(-5.9rem);
           transition-delay: 320ms;
           text-align: left; }
-        #home-describe #process .process-icon:active #effect-4, #home-describe #process .process-icon:focus #effect-4, #home-describe #process .process-icon:hover #effect-4, #home-describe #process .process-icon.clicked #effect-4 {
+        #home-describe #process .process-icon.clicked #effect-4 {
           visibility: visible;
           transform: translateY(-5.6rem);
           transition-delay: 320ms;

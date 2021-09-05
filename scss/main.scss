@@ -595,9 +595,6 @@ p {
                     transition-duration: 350ms;
             
                     // Hover Effects
-                    &:active,
-                    &:focus, 
-                    &:hover,
                     &.clicked {
                     border-radius: 5px;
                     z-index: 3;
