@@ -117,13 +117,10 @@
                                     <label for="email">Email Address:</label>
                                     <input type="email" name="email" id="email" required>
                                 </div>
-                                <div id="g-recaptcha-response"></div>
+                                <div class="g-recaptcha" data-sitekey="6LeTmEYcAAAAAPpiEVqfSxaY7cRghjb1OJwJl25C"></div>
                                 <p class="reassure">*Your information will not be sold, shared, or rented*</p>
                                 <input type="submit" value="Get Answers" class="btn btn-dark btn-form"></input>
                                 </form>
-                                <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-                                async defer>
-                                </script>
                         </div>
                     </div>
                 </div>
@@ -131,13 +128,6 @@
         </div>
     </section>
 
-    
-    <script type="text/javascript">
-        var onloadCallback = function() {
-            grecaptcha.render('g-recaptcha-response', {
-            'sitekey' : '6LeTmEYcAAAAAPpiEVqfSxaY7cRghjb1OJwJl25C'
-            });
-        };
-        </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
