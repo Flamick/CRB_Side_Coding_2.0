@@ -29,16 +29,8 @@ const clickEffect = (e) => {
     }
 }
 
-
 itemOverlay.forEach(node => {
     node.addEventListener('click', clickEffect)
 });
 
 const mediaDevice = window.matchMedia('(max-width: 799px)');
-
-window.onload = function() { 
-    var el = document.getElementById('g-recaptcha-response'); 
-    if (el) { 
-            el.setAttribute('required', 'required'); 
-    } 
-}

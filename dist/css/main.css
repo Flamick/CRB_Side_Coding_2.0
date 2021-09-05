@@ -263,8 +263,7 @@ p {
     padding: .5rem 0; }
 
 #home-describe .what-side-content {
-  padding: 2rem 0 3rem 0;
-  /* CSS */ }
+  padding: 2rem 0 3rem 0; }
   #home-describe .what-side-content .flex-container {
     display: flex;
     flex-direction: column;
@@ -291,12 +290,6 @@ p {
   #home-describe .what-side-content label:after {
     content: " *";
     color: red; }
-  #home-describe .what-side-content #g-recaptcha-response {
-    display: block !important;
-    position: absolute;
-    margin: -50px 0 0 0 !important;
-    z-index: -999999;
-    opacity: 0; }
   #home-describe .what-side-content .reassure {
     font-size: .75rem;
     text-align: center;
