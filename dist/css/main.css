@@ -174,7 +174,19 @@ p {
   min-height: 100vh;
   z-index: 3;
   background-color: #373D40;
-  transition: all .5s ease-in-out; }
+  transition: all .3s ease-in-out; }
+  #mobile-menu .navlink-1 {
+    transform: translateX(100%);
+    transition: 350ms all 150ms; }
+  #mobile-menu .navlink-2 {
+    transform: translateX(100%);
+    transition: 350ms all 250ms; }
+  #mobile-menu .navlink-3 {
+    transform: translateX(100%);
+    transition: 350ms all 350ms; }
+  #mobile-menu .navlink-4 {
+    transform: translateX(100%);
+    transition: 350ms all 450ms; }
   #mobile-menu ul {
     list-style: none; }
   #mobile-menu a {
@@ -187,6 +199,11 @@ p {
     font-size: 1.3rem; }
   #mobile-menu.open {
     left: 0; }
+    #mobile-menu.open .navlink-1,
+    #mobile-menu.open .navlink-2,
+    #mobile-menu.open .navlink-3,
+    #mobile-menu.open .navlink-4 {
+      transform: translateX(0); }
 
 #contact-top {
   background-color: #373D40;
@@ -538,7 +555,7 @@ p {
           text-align: left; }
 
 #cta {
-  background: linear-gradient(to top, #6DA4BF, #fff);
+  background: linear-gradient(to top, rgba(109, 164, 191, 0.7), #fff);
   padding: 2rem 0 3rem 0; }
   #cta .cta-content {
     display: flex;
@@ -650,7 +667,7 @@ p {
       background: linear-gradient(to top left, #6DA4BF, 75%, #fff); }
 
 #about {
-  padding: 2rem 0; }
+  padding: 2rem 0 3rem 0; }
   #about .about-title {
     display: flex;
     flex-direction: column;
@@ -692,3 +709,102 @@ p {
       height: auto;
       border-radius: 50%;
       box-shadow: 1px 1px 10px 5px #555; }
+
+#contact {
+  padding: 2rem 0 3rem 0; }
+  #contact .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #contact h1 {
+    padding: 1rem; }
+  #contact h4 {
+    padding: 1rem 0;
+    text-align: center; }
+  #contact ul {
+    list-style: disc;
+    padding: 1rem;
+    line-height: 1.6rem; }
+  #contact .form-field {
+    padding: .5rem 0; }
+  #contact label {
+    line-height: 2rem; }
+    #contact label:after {
+      content: " *";
+      color: red; }
+  #contact input {
+    width: 100%;
+    padding: .3rem .3rem;
+    border: 3px #B0C1CA solid;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif; }
+    #contact input:focus {
+      outline: none;
+      border-color: #6DA4BF; }
+  #contact .btn-form {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600; }
+  #contact #project-description {
+    width: 100%;
+    height: auto;
+    border: 3px #B0C1CA solid;
+    border-radius: 3px;
+    font-size: 1rem;
+    resize: none;
+    padding: .3rem .3rem;
+    line-height: 1.2rem;
+    font-family: "Montserrat", sans-serif; }
+    #contact #project-description:focus {
+      outline: none;
+      border-color: #6DA4BF; }
+  #contact .g-recaptcha {
+    padding-top: 1rem; }
+  #contact #g-recaptcha-response {
+    display: block !important;
+    position: absolute;
+    margin: -50px 0 0 0 !important;
+    z-index: -999999;
+    opacity: 0; }
+  #contact .reassure {
+    font-size: .75rem;
+    text-align: center;
+    padding: 1rem 0; }
+  #contact button {
+    width: 100%; }
+
+#my-info {
+  background: linear-gradient(to top, rgba(109, 164, 191, 0.7), #fff); }
+  #my-info .my-info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0 3rem 0;
+    color: #333; }
+    #my-info .my-info-content h3 {
+      font-weight: 500; }
+    #my-info .my-info-content p {
+      font-weight: 500; }
+      #my-info .my-info-content p a {
+        text-decoration: none;
+        color: #333; }
+  #my-info .info {
+    border-bottom: 1px dotted #333;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0; }

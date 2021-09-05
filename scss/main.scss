@@ -133,7 +133,24 @@ p {
     min-height: 100vh;
     z-index: 3;
     background-color: $medium-complimentary;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
+
+    .navlink-1 {
+        transform: translateX(100%);
+        transition: 350ms all 150ms;
+    }
+    .navlink-2{
+        transform: translateX(100%);
+        transition: 350ms all 250ms;
+    }
+    .navlink-3 {
+        transform: translateX(100%);
+        transition: 350ms all 350ms;
+    }
+    .navlink-4 {
+        transform: translateX(100%);
+        transition: 350ms all 450ms;
+    }
 
     ul {
         list-style: none;
@@ -152,6 +169,13 @@ p {
 
     &.open {
         left: 0;
+
+        & .navlink-1,
+        & .navlink-2,
+        & .navlink-3,
+        & .navlink-4 {
+            transform: translateX(0);
+        }
     }
 }
 
@@ -634,7 +658,7 @@ p {
 
 // Main CTA
 #cta {
-    background: linear-gradient(to top, $primary-color, #fff);
+    background: linear-gradient(to top, rgba($color: $primary-color, $alpha: 0.7), #fff);
     padding: 2rem 0 3rem 0;
     
     .cta-content {
@@ -798,7 +822,7 @@ padding: 2rem 0;
 
 // About
 #about {
-    padding: 2rem 0;
+    padding: 2rem 0 3rem 0;
     
     .about-title {
     display: flex;
@@ -857,5 +881,152 @@ padding: 2rem 0;
             border-radius: 50%;
             box-shadow: 1px 1px 10px 5px $medium-color;
         }
+    }
+}
+
+// Contact
+#contact {
+    padding: 2rem 0 3rem 0;
+    
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    h1 {
+        padding: 1rem;
+    }
+    
+    h4 {
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    ul {
+        list-style: disc;
+        padding: 1rem;
+        line-height: 1.6rem;
+    }
+
+    .form-field {
+        padding: .5rem 0;
+    }
+
+    label {
+        line-height: 2rem;
+
+        &:after {
+            content: " *";
+            color: red;
+        }
+    }
+    
+    input {
+        width: 100%;
+        padding: .3rem .3rem;
+        border: 3px $light-complimentary solid;
+        border-radius: 3px;
+        font-size: 1rem;
+        font-family: $primary-font;
+
+        &:focus {
+            outline: none;
+            border-color: $primary-color;
+        }
+    }
+
+    .btn-form {
+        display: inline-block;
+        text-decoration: none;
+        padding: 1rem 1.5rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    #project-description {
+        width: 100%;
+        height: auto;
+        border: 3px $light-complimentary solid;
+        border-radius: 3px;
+        font-size: 1rem;
+        resize: none;
+        padding: .3rem .3rem;
+        line-height: 1.2rem;
+        font-family: $primary-font;
+
+        &:focus {
+            outline: none;
+            border-color: $primary-color;
+        }
+    }
+
+    .g-recaptcha {
+        padding-top: 1rem;
+    }
+
+    #g-recaptcha-response {
+        display: block !important;
+        position: absolute;
+        margin: -50px 0 0 0 !important;
+        z-index: -999999;
+        opacity: 0;
+    }
+
+    .reassure {
+        font-size: .75rem;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+
+// My Info
+#my-info {
+    background: linear-gradient(to top, rgba($color: $primary-color, $alpha: 0.7), #fff);
+
+    .my-info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0 3rem 0;
+    color: $dark-color;
+    
+        h3 {
+            font-weight: 500;
+        }
+    
+        p {
+            font-weight: 500;
+    
+            a {
+            text-decoration: none;
+            color: $dark-color;
+            }
+        }
+    }
+
+    .info {
+        border-bottom: 1px dotted $dark-color;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 0;
     }
 }

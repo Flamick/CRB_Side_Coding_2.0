@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CRB Side Coding LLC is a new company that was started in 2020. Here you can learn a bit more about the man behind it all.">
+    <meta name="description" content="Get in touch with CRB Side Coding LLC. This page offers contact info to either call us directly or send us an email so we can talk about what you need from your project.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/90872ef2e4.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/main.css">
-    <title>CRB Side Coding LLC | About us</title>
+    <title>CRB Side Coding LLC | Contact Us</title>
 </head>
 <body>
     <!-- Navbar -->
@@ -54,25 +54,64 @@
         </div>
     </div>
 
-    <!-- About -->
-    <section id="about">
+    <!-- Contact Us -->
+    <section id="contact">
         <div class="container">
-            <div class="about-title">
-                <h1>About CRB Side Coding LLC</h1>
+            <div class="flex-container">
+                <h1>Contact Us</h1>
                 <div class="bottom-line"></div>
+                <h4>We'd love to hear from you. If you're interested in our services or just looking to get more information, you can fill out the form below with some basic information and a short description of your project and we'll be in touch.</h4>
+                <div class="contact-form">
+                    <form id="contact-form" class="side-form" action="https://formspree.io/f/mpzkkdgz" method="POST" accept-charset="UTF-8" >
+                        <div class="form-field">
+                            <label for="first-name">First Name:</label>
+                            <input type="text" name="first-name" id="first-name" placeholder="Enter First Name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" name="last-name" id="last-name" placeholder="Enter Last Name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="phone">Phone Number:</label>
+                            <input type="phone" name="phone" id="phone" placeholder="Enter Phone Number" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Email Address:</label>
+                            <input type="email" name="email" id="email" placeholder="Enter Email" required>
+                        </div>
+                        <div class="formfield">
+                            <label for="textarea">Short description of your project</label>
+                            <textarea name="textarea" id="project-description" cols="30" rows="8" placeholder="Description"></textarea>
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="6LeTmEYcAAAAAPpiEVqfSxaY7cRghjb1OJwJl25C"></div>
+                        <p class="reassure">*Your information will not be sold, shared, or rented*</p>
+                        <button type="submit" class="btn btn-dark">Get Answers</button>
+                    </form>
+                </div>
             </div>
-            <div class="my-pic">
-                <img src="../img/portfolio-pic.png" alt="Cameron">
-                <h3>Cameron Beiling</h3>
-                <p>Sole-Member</p>
+        </div>
+    </section>
+
+    <!-- My Info -->
+    <section id="my-info">
+        <div class="container">
+            <div class="my-info-content">
+                <div class="info">
+                <i class="fas fa-envelope fa-2x"></i>
+                <h3>Email</h3>
+                <p>crbsidecoding@gmail.com</p>
                 </div>
-            <div class="about-grid">
-                <div class="about-info">
-                    <div class="container">
-                        <p> CRB Side Coding LLC is a small, local business in that was started in 2020. Right now we're just a one-man team. My name is Cameron and I'm the one you're going to be working with. What I lack in experience, I make up for in passion and dedication. I've spent a while learning and absorbing what information I can, and in this line of work, the learning never stops. This is a career that is always changing and always keeping me on my toes and I love the challenge of it all. It's also a great feeling to learn all of this and see first hand the difference between when I started to where I am now. It's exciting to think where I'll be a year from now and what I'll be able to build.</p>
-                        <p>I want to work with small businesses because as someone who is trying to get his business off the ground, I know it can be difficult and I want to help others do the same. Even if your business is already doing well, I want to help you do even better. This community has been good to me, and I grew up here, so now I want to do my part and help the community. I've always loved technology, and those that know me would tell you I've always had a love for it. When I was younger, it came from an interest in tearing apart anything electronic I could (which I'm sure my mother was thrilled about) and seeing if I could put it back together. Now I get to do the same thing but with websites. If you got this far, I'd like to say thank you for taking the time to check out this website.</p>
-                    </div>
+                <div class="info">
+                <i class="fas fa-phone fa-2x"></i>
+                <h3>Phone</h3>
+                <p><a href="tel:3309218719">(330) 921-8719</a></p>
                 </div>
+                <div class="info">
+                <i class="fas fa-address-card fa-2x"></i>
+                <h3>Address</h3>
+                <p>Columbiana OH</p>
+                </div>
+            
             </div>
         </div>
     </section>
@@ -96,6 +135,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <script src="js/main.js"></script>
 </body>
