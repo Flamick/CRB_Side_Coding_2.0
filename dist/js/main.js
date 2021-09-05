@@ -47,8 +47,6 @@ const iconClickEffect = (e) => {
             e.currentTarget.classList.remove('clicked');
         }   else if(unclicked) {
             e.currentTarget.classList.add('clicked');
-        }   else if (!isClickInsideElement) {
-            clicked.classList.remove('clicked');
         }
     }
 }
