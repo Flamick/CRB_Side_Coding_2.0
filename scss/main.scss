@@ -137,19 +137,19 @@ p {
 
     .navlink-1 {
         transform: translateX(100%);
-        transition: 350ms all 150ms;
+        transition: 500ms all 150ms;
     }
     .navlink-2{
         transform: translateX(100%);
-        transition: 350ms all 250ms;
+        transition: 500ms all 250ms;
     }
     .navlink-3 {
         transform: translateX(100%);
-        transition: 350ms all 350ms;
+        transition: 500ms all 350ms;
     }
     .navlink-4 {
         transform: translateX(100%);
-        transition: 350ms all 450ms;
+        transition: 500ms all 450ms;
     }
 
     ul {
@@ -1028,5 +1028,9 @@ padding: 2rem 0;
         align-items: center;
         text-align: center;
         padding: 1rem 0;
+
+        &:last-child {
+            border: none;
+        }
     }
 }

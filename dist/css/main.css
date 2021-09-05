@@ -177,16 +177,16 @@ p {
   transition: all .3s ease-in-out; }
   #mobile-menu .navlink-1 {
     transform: translateX(100%);
-    transition: 350ms all 150ms; }
+    transition: 500ms all 150ms; }
   #mobile-menu .navlink-2 {
     transform: translateX(100%);
-    transition: 350ms all 250ms; }
+    transition: 500ms all 250ms; }
   #mobile-menu .navlink-3 {
     transform: translateX(100%);
-    transition: 350ms all 350ms; }
+    transition: 500ms all 350ms; }
   #mobile-menu .navlink-4 {
     transform: translateX(100%);
-    transition: 350ms all 450ms; }
+    transition: 500ms all 450ms; }
   #mobile-menu ul {
     list-style: none; }
   #mobile-menu a {
@@ -808,3 +808,5 @@ p {
     align-items: center;
     text-align: center;
     padding: 1rem 0; }
+    #my-info .info:last-child {
+      border: none; }
