@@ -117,7 +117,7 @@
                                     <label for="email">Email Address:</label>
                                     <input type="email" name="email" id="email" required>
                                 </div>
-                                <div id="html_element"></div>
+                                <div id="g-recaptcha-response"></div>
                                 <p class="reassure">*Your information will not be sold, shared, or rented*</p>
                                 <button type="submit" class="btn btn-dark">Get Answers</button>
                                 </form>
@@ -134,7 +134,7 @@
     
     <script type="text/javascript">
         var onloadCallback = function() {
-            grecaptcha.render('html_element', {
+            grecaptcha.render('g-recaptcha-response', {
             'sitekey' : '6LeTmEYcAAAAAPpiEVqfSxaY7cRghjb1OJwJl25C'
             });
         };
