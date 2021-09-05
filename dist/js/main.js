@@ -36,17 +36,26 @@ itemOverlay.forEach(node => {
 const mediaDevice = window.matchMedia('(max-width: 799px)');
 
 //* Click events toggle ".process-icon"
-let processIcon = Array.from(document.querySelectorAll('.process-icon'));
+const processIcon = Array.from(document.querySelectorAll('.process-icon'));
 
+//*If icons are clicked they open and close
 const iconClickEffect = (e) => {
     if(mediaDevice.matches) {
         e.preventDefault();
-        clicked = document.querySelector('.process-icon.clicked');
-        const unclicked = document.querySelectorAll('.process-icon');
-        if(clicked){
-            e.currentTarget.classList.remove('clicked');
-        }   else if(unclicked) {
+
+        const clicked = document.querySelector('.process-icon.clicked');
+        const unclicked = document.querySelectorAll('.process-icon:not(.clicked)');
+        let clickedTrue = false;
+
+        if(unclicked) {
             e.currentTarget.classList.add('clicked');
+            clickedTrue = true;
+            console.log(clickedTrue);
+        }
+        if(clicked) {
+            clicked.classList.remove('clicked');
+            clickedTrue = false;
+            console.log(clickedTrue);
         }
     }
 }
@@ -54,6 +63,20 @@ const iconClickEffect = (e) => {
 processIcon.forEach(node => {
     node.addEventListener('click', iconClickEffect);
 });
+
+//* Remove .clicked when anything else is clicked
+document.body.addEventListener('click', function(e) {
+    var el = e.target;
+    const clicked = document.querySelector('.process-icon.clicked');
+    do{
+        if(el.classList && el.classList.contains('clicked')) {
+            return;
+        }
+    } while (el = el.parentNode);
+    clicked.classList.remove('clicked');
+});
+
+
 
 //* Recaptcha
 window.onload = function() { 
