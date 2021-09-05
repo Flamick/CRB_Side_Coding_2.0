@@ -31,7 +31,7 @@ body {
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     width: 90%;
 }
 
@@ -52,6 +52,7 @@ p {
 
     .flex-container {
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
@@ -254,7 +255,11 @@ p {
             grid-template-columns: repeat(auto, 1fr);
         }
 
-        .what-content {
+        // Base section styles
+        .what-content,
+        .home-web-design,
+        .why-content,
+        #process-1 {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -385,6 +390,58 @@ p {
 
             button {
                 width: 100%;
+            }
+        }
+
+        // Home: web design
+        // Home: why content
+        .home-web-design,
+        .why-content {
+            ul {
+                padding: 1rem;
+                list-style: disc;
+
+                li {
+                    padding: .5rem 0;
+                }
+            }
+        }
+
+        .why-content {
+            background: $light-color;
+        }
+
+        // Home: Why Side Content
+        .why-side-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: $light-complimentary;
+            padding: 2rem 0 3rem 0;
+            color: set-text-color($primary-color);
+
+            h3 {
+            padding: 1rem 0;
+            text-align: center;
+            }
+
+            ul {
+            list-style: disc;
+            padding: 1rem 2rem;
+            line-height: 1.6rem;
+
+                li {
+                    padding: 0.5rem 0;
+                }
+            }
+
+            .btn {
+            justify-self: center;
+
+                &:hover {
+                    background: $primary-color;
+                }
             }
         }
     }  

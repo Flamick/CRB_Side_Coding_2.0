@@ -3,6 +3,12 @@
   width: 86%;
   margin: 0 auto; }
 
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 .logo-title {
   font-weight: 500;
   font-size: 1.4rem; }
@@ -16,7 +22,10 @@
 
 .small-text-logo {
   font-size: .9rem;
-  font-weight: 600; }
+  font-weight: 500; }
+
+.small-text-logo-title {
+  font-size: 1.2rem; }
 
 .primary-color-text {
   color: #6DA4BF; }
@@ -43,7 +52,8 @@
   border-radius: 10px;
   font-size: 1.2rem;
   text-align: center;
-  font-weight: 600; }
+  font-weight: 600;
+  width: 100%; }
 
 .btn-light {
   color: #373D40;
@@ -59,6 +69,9 @@
   background: #6DA4BF;
   display: block;
   margin: 0 auto; }
+
+.lead {
+  font-weight: bold; }
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -82,7 +95,7 @@ body {
   color: #333; }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   width: 90%; }
 
 p {
@@ -96,6 +109,7 @@ p {
   top: 0; }
   #mobile-nav .flex-container {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between; }
 
@@ -242,24 +256,42 @@ p {
   display: grid;
   grid-template-columns: repeat(auto, 1fr); }
 
-#home-describe .what-content {
+#home-describe .what-content,
+#home-describe .home-web-design,
+#home-describe .why-content,
+#home-describe #process-1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2rem 0; }
-  #home-describe .what-content h3 {
+  #home-describe .what-content h3,
+  #home-describe .home-web-design h3,
+  #home-describe .why-content h3,
+  #home-describe #process-1 h3 {
     padding: 1rem 0;
     text-align: center;
     width: 90%; }
-    #home-describe .what-content h3 .small-text-logo {
+    #home-describe .what-content h3 .small-text-logo,
+    #home-describe .home-web-design h3 .small-text-logo,
+    #home-describe .why-content h3 .small-text-logo,
+    #home-describe #process-1 h3 .small-text-logo {
       font-size: .9rem;
       font-weight: 800; }
-  #home-describe .what-content p {
+  #home-describe .what-content p,
+  #home-describe .home-web-design p,
+  #home-describe .why-content p,
+  #home-describe #process-1 p {
     padding: 1rem 0; }
-  #home-describe .what-content ol {
+  #home-describe .what-content ol,
+  #home-describe .home-web-design ol,
+  #home-describe .why-content ol,
+  #home-describe #process-1 ol {
     padding: 1rem; }
-  #home-describe .what-content li {
+  #home-describe .what-content li,
+  #home-describe .home-web-design li,
+  #home-describe .why-content li,
+  #home-describe #process-1 li {
     padding: .5rem 0; }
 
 #home-describe .what-side-content {
@@ -331,3 +363,36 @@ p {
     padding: 1rem 0; }
   #home-describe .what-side-content button {
     width: 100%; }
+
+#home-describe .home-web-design ul,
+#home-describe .why-content ul {
+  padding: 1rem;
+  list-style: disc; }
+  #home-describe .home-web-design ul li,
+  #home-describe .why-content ul li {
+    padding: .5rem 0; }
+
+#home-describe .why-content {
+  background: #f4f4f4; }
+
+#home-describe .why-side-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #B0C1CA;
+  padding: 2rem 0 3rem 0;
+  color: set-text-color(#6DA4BF); }
+  #home-describe .why-side-content h3 {
+    padding: 1rem 0;
+    text-align: center; }
+  #home-describe .why-side-content ul {
+    list-style: disc;
+    padding: 1rem 2rem;
+    line-height: 1.6rem; }
+    #home-describe .why-side-content ul li {
+      padding: 0.5rem 0; }
+  #home-describe .why-side-content .btn {
+    justify-self: center; }
+    #home-describe .why-side-content .btn:hover {
+      background: #6DA4BF; }

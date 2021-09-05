@@ -14,7 +14,7 @@ if(!menuOpen) {
 }
 });
 
-//* Click events toggle
+//* Click events toggle ".item"
 let itemOverlay = Array.from(document.querySelectorAll('.item'));
 
 const clickEffect = (e) => {
@@ -35,7 +35,26 @@ itemOverlay.forEach(node => {
 
 const mediaDevice = window.matchMedia('(max-width: 799px)');
 
-// Recaptcha
+//* Click events toggle ".process-icon"
+let processIcon = Array.from(document.querySelectorAll('.process-icon'));
+
+const iconClickEffect = (e) => {
+    if(mediaDevice.matches) {
+        e.preventDefault();
+        clicked = document.querySelector('.process-icon.clicked');
+        const unclicked = document.querySelectorAll('.process-icon');
+        if(unclicked){
+            e.currentTarget.classList.add('clicked');
+            clicked.classList.remove('clicked');
+        }
+    }
+}
+
+processIcon.forEach(node => {
+    node.addEventListener('click', iconClickEffect)
+});
+
+//* Recaptcha
 window.onload = function() { 
     var el = document.getElementById('g-recaptcha-response'); 
     if (el) { 

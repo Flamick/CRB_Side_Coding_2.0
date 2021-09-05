@@ -4,6 +4,13 @@
     margin: 0 auto;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 // Text modifications
 .logo-title {
     font-weight: 500;
@@ -21,7 +28,11 @@
 
 .small-text-logo {
     font-size: .9rem;
-    font-weight: 600;
+    font-weight: 500;
+}
+
+.small-text-logo-title {
+    font-size: 1.2rem;
 }
 
 .primary-color-text {
@@ -56,6 +67,7 @@
     font-size: 1.2rem;
     text-align: center;
     font-weight: 600;
+    width: 100%;
 }
 
 .btn {
@@ -78,4 +90,8 @@
     background: $primary-color;
     display: block;
     margin: 0 auto;
+}
+
+.lead {
+    font-weight: bold;
 }
