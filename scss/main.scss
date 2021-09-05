@@ -330,6 +330,24 @@ p {
                 color: red;
             }
 
+            .btn-form {
+                display: inline-block;
+                text-decoration: none;
+                padding: 1rem 1.5rem;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                border-radius: 10px;
+                font-size: 1.2rem;
+                text-align: center;
+                font-weight: 600;
+            }
+
+            /* CSS */
+            // #g-recaptcha-response {
+            //     display: block;
+            // }
+
             .reassure {
                 font-size: .75rem;
                 text-align: center;

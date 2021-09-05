@@ -263,7 +263,8 @@ p {
     padding: .5rem 0; }
 
 #home-describe .what-side-content {
-  padding: 2rem 0 3rem 0; }
+  padding: 2rem 0 3rem 0;
+  /* CSS */ }
   #home-describe .what-side-content .flex-container {
     display: flex;
     flex-direction: column;
@@ -290,6 +291,17 @@ p {
   #home-describe .what-side-content label:after {
     content: " *";
     color: red; }
+  #home-describe .what-side-content .btn-form {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600; }
   #home-describe .what-side-content .reassure {
     font-size: .75rem;
     text-align: center;
