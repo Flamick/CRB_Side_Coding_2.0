@@ -681,10 +681,12 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem; }
+    padding: 2rem 0;
+    width: 100%; }
     #about .my-pic h3 {
       font-weight: 500;
-      padding-top: 1rem; }
+      padding: 1rem 0;
+      text-align: center; }
     #about .my-pic img {
       max-width: 100%;
       height: auto;
