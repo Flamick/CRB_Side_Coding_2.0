@@ -35,10 +35,10 @@ itemOverlay.forEach(node => {
 
 const mediaDevice = window.matchMedia('(max-width: 799px)');
 
-// javascript
-// window.onload = function() { 
-//     var el = document.getElementById('g-recaptcha-response'); 
-//     if (el) { 
-//         el.setAttribute('required', 'required'); 
-//     } 
-//     }
+// Recaptcha
+window.onload = function() { 
+    var el = document.getElementById('g-recaptcha-response'); 
+    if (el) { 
+        el.setAttribute('required', 'required'); 
+    } 
+    }
