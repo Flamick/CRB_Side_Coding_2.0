@@ -207,7 +207,7 @@ p {
     #contact-top .social-contact ul .fab {
       border-radius: 100px;
       border: 2px solid #f4f4f4;
-      padding: .3rem; }
+      padding: .5rem; }
   #contact-top .direct-contact {
     display: flex;
     gap: 1rem;
@@ -408,7 +408,8 @@ p {
   #home-describe #process .btn-describe {
     display: none; }
   #home-describe #process .btn-describe-mobile {
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    width: 80%; }
   #home-describe #process .process {
     display: flex;
     flex-direction: column;
@@ -457,7 +458,7 @@ p {
       font-weight: 400; }
     #home-describe #process .process .outer-box {
       position: relative;
-      height: 15rem;
+      height: 240px;
       width: 100%; }
     #home-describe #process .process .inner-box {
       position: absolute;
@@ -469,7 +470,8 @@ p {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      transition: all 350ms; }
       #home-describe #process .process .inner-box h3 {
         font-weight: 500;
         padding-top: 2rem; }
@@ -497,33 +499,110 @@ p {
       position: relative;
       transition: all 350ms ease;
       transition-duration: 350ms; }
+      #home-describe #process .process-icon::before {
+        transition: all 350ms; }
       #home-describe #process .process-icon.clicked {
         border-radius: 5px;
         z-index: 3;
         transform: scale(3) translateY(20px);
         color: #333;
-        height: 80px;
-        width: 100px;
+        height: 70px;
+        width: 90px;
         border: 2px #6DA4BF solid; }
+        #home-describe #process .process-icon.clicked::before {
+          opacity: 0; }
+        #home-describe #process .process-icon.clicked + .inner-box {
+          opacity: 0; }
         #home-describe #process .process-icon.clicked .process-step {
-          transform: scale(0); }
+          transform: scale(0);
+          opacity: 0; }
         #home-describe #process .process-icon.clicked #effect-1 {
           visibility: visible;
-          transform: translateY(-175%);
+          transform: translateY(-83.7px);
           transition-delay: 320ms;
           text-align: left; }
         #home-describe #process .process-icon.clicked #effect-2 {
           visibility: visible;
-          transform: translateY(-175%);
+          transform: translateY(-87px);
           transition-delay: 320ms;
           text-align: left; }
         #home-describe #process .process-icon.clicked #effect-3 {
           visibility: visible;
-          transform: translateY(-5.9rem);
+          transform: translateY(-84px);
           transition-delay: 320ms;
           text-align: left; }
         #home-describe #process .process-icon.clicked #effect-4 {
           visibility: visible;
-          transform: translateY(-5.6rem);
+          transform: translateY(-83.8px);
           transition-delay: 320ms;
           text-align: left; }
+
+#cta {
+  background: linear-gradient(to top, #6DA4BF, #fff);
+  padding: 2rem 0 3rem 0; }
+  #cta .cta-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    #cta .cta-content .fol {
+      font-weight: bold; }
+    #cta .cta-content p {
+      margin: 2rem 0; }
+
+#main-footer {
+  background: #333;
+  color: #fff; }
+  #main-footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1rem;
+    padding: 2rem 0 1rem 0;
+    text-align: center; }
+    #main-footer .footer-content p {
+      padding-bottom: .5rem; }
+    #main-footer .footer-content .social {
+      padding-top: 1rem; }
+      #main-footer .footer-content .social a {
+        padding: 0 1rem; }
+    #main-footer .footer-content .social .fab {
+      border: 2px #f4f4f4 solid;
+      border-radius: 50%;
+      padding: 0.5rem; }
+    #main-footer .footer-content a {
+      text-decoration: none;
+      color: #f4f4f4; }
+    #main-footer .footer-content .legal {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      #main-footer .footer-content .legal .small-legal {
+        font-size: 0.8rem;
+        padding: 0 1rem; }
+
+#privacy-policy,
+#terms_and_conditions {
+  line-height: 1.6rem;
+  padding: 2rem 4rem; }
+  #privacy-policy h1,
+  #terms_and_conditions h1 {
+    margin: 2rem 0; }
+  #privacy-policy h2,
+  #terms_and_conditions h2 {
+    margin: 2rem 0; }
+  #privacy-policy ul,
+  #terms_and_conditions ul {
+    list-style: disc;
+    padding: 0rem 2rem; }
+  #privacy-policy p,
+  #terms_and_conditions p {
+    margin: 1rem 0; }
+  #privacy-policy a,
+  #terms_and_conditions a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #6DA4BF; }
