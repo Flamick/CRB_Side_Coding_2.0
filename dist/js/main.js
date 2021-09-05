@@ -43,15 +43,18 @@ const iconClickEffect = (e) => {
         e.preventDefault();
         clicked = document.querySelector('.process-icon.clicked');
         const unclicked = document.querySelectorAll('.process-icon');
-        if(unclicked){
+        if(clicked){
+            e.currentTarget.classList.remove('clicked');
+        }   else if(unclicked) {
             e.currentTarget.classList.add('clicked');
+        }   else if (!isClickInsideElement) {
             clicked.classList.remove('clicked');
         }
     }
 }
 
 processIcon.forEach(node => {
-    node.addEventListener('click', iconClickEffect)
+    node.addEventListener('click', iconClickEffect);
 });
 
 //* Recaptcha
