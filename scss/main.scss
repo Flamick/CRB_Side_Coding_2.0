@@ -312,22 +312,27 @@ p {
                 padding: .5rem 0;
             }
 
+            label {
+                line-height: 2rem;
+
+                &:after {
+                    content: " *";
+                    color: red;
+                }
+            }
+            
             input {
                 width: 100%;
                 padding: .3rem .3rem;
                 border: 3px #fff solid;
                 border-radius: 3px;
                 font-size: 1rem;
+                font-family: $primary-font;
 
                 &:focus {
                     outline: none;
                     border-color: $primary-color;
                 }
-            }
-
-            label:after {
-                content: " *";
-                color: red;
             }
 
             .btn-form {
@@ -341,6 +346,26 @@ p {
                 font-size: 1.2rem;
                 text-align: center;
                 font-weight: 600;
+            }
+
+            #project-description {
+                width: 100%;
+                height: auto;
+                border: 3px solid $light-complimentary;
+                font-size: 16px;
+                resize: none;
+                padding: .3rem;
+                line-height: 1.2rem;
+                font-family: $primary-font;
+
+                &:focus {
+                    outline: none;
+                    border-color: $primary-color;
+                }
+            }
+
+            .g-recaptcha {
+                padding:  1rem 0 0 3px;
             }
 
             #g-recaptcha-response {
