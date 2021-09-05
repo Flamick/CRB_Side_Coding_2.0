@@ -587,22 +587,106 @@ p {
 #privacy-policy,
 #terms_and_conditions {
   line-height: 1.6rem;
-  padding: 2rem 4rem; }
+  padding: 2rem 0; }
   #privacy-policy h1,
   #terms_and_conditions h1 {
-    margin: 2rem 0; }
+    padding: 1rem 0;
+    text-align: center; }
   #privacy-policy h2,
   #terms_and_conditions h2 {
-    margin: 2rem 0; }
+    padding: 1rem 0;
+    text-align: center; }
   #privacy-policy ul,
   #terms_and_conditions ul {
     list-style: disc;
-    padding: 0rem 2rem; }
+    padding: 1rem; }
   #privacy-policy p,
   #terms_and_conditions p {
-    margin: 1rem 0; }
+    padding: 1rem 0; }
   #privacy-policy a,
   #terms_and_conditions a {
     text-decoration: none;
     font-weight: bold;
     color: #6DA4BF; }
+
+#services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0 3rem 0; }
+  #services h1 {
+    padding: 1rem 0; }
+  #services h3 {
+    font-weight: 500;
+    padding: 1rem 0;
+    font-size: 1.2rem; }
+  #services .services-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: set-text-color(#6DA4BF); }
+    #services .services-grid ul {
+      list-style: disc;
+      text-align: left;
+      padding: 1rem; }
+      #services .services-grid ul li {
+        padding: 0.5rem;
+        font-weight: 500; }
+    #services .services-grid .card {
+      background: #6DA4BF;
+      padding: 2rem 0;
+      border-radius: 5px;
+      box-shadow: 1px 1px 5px 3px #555;
+      align-items: center;
+      margin-bottom: 2rem; }
+    #services .services-grid .services-1 {
+      background: linear-gradient(to top right, #6DA4BF, 75%, #fff); }
+    #services .services-grid .services-2 {
+      background: linear-gradient(360deg, #6DA4BF, #fff); }
+    #services .services-grid .services-3 {
+      background: linear-gradient(to top left, #6DA4BF, 75%, #fff); }
+
+#about {
+  padding: 2rem 0; }
+  #about .about-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #about .about-title h1 {
+      padding: 1rem 0;
+      text-align: center; }
+    #about .about-title .bottom-line {
+      margin-bottom: 2rem; }
+  #about .about-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #about .about-grid .about-info {
+      grid-column: 1;
+      background: linear-gradient(to top left, #6DA4BF, #fff);
+      box-shadow: 1px 1px 5px 3px #555;
+      border-radius: 5px;
+      padding: 2rem 0; }
+      #about .about-grid .about-info p {
+        text-indent: 2rem;
+        font-weight: 500; }
+  #about .my-pic {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem; }
+    #about .my-pic h3 {
+      font-weight: 500;
+      padding-top: 1rem; }
+    #about .my-pic img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 1px 1px 10px 5px #555; }
