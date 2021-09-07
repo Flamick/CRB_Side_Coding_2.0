@@ -623,8 +623,7 @@ p {
                         transition: all 350ms;
                     }
 
-                    &.clicked,
-                    &:hover {
+                    &.clicked {
                     border-radius: 5px;
                     z-index: 3;
                     transform: scale(3) translateY(20px);
