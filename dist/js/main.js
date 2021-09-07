@@ -33,7 +33,7 @@ itemOverlay.forEach(node => {
     node.addEventListener('click', clickEffect)
 });
 
-const mediaDevice = window.matchMedia('(max-width: 799px)');
+const mediaDevice = window.matchMedia('(max-width: 1200px)');
 
 //* Click events toggle ".process-icon"
 const processIcon = Array.from(document.querySelectorAll('.process-icon'));
@@ -68,12 +68,14 @@ processIcon.forEach(node => {
 document.body.addEventListener('click', function(e) {
     var el = e.target;
     const clicked = document.querySelector('.process-icon.clicked');
-    do{
-        if(el.classList && el.classList.contains('clicked')) {
-            return;
-        }
-    } while (el = el.parentNode);
-    clicked.classList.remove('clicked');
+    if(mediaDevice.matches) {
+        do{
+            if(el.classList && el.classList.contains('clicked')) {
+                return;
+            }
+        } while (el = el.parentNode);
+        clicked.classList.remove('clicked');
+    }
 });
 
 
