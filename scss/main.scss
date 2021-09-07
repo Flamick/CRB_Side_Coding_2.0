@@ -74,11 +74,13 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     transition: all .5s ease-in-out;
     z-index: 4;
+    background: $medium-color;
+    border-radius: 5px;
 }
 
 .menu-btn__burger {
@@ -235,6 +237,7 @@ p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        min-height: 80vh;
 
         &::before {
             content: "";
@@ -331,18 +334,38 @@ p {
                 list-style: disc;
                 padding: 1rem;
                 line-height: 1.6rem;
+
+                @media screen and (max-width:345px) {
+                    padding: 1rem 2rem;
+                }
             }
 
             .form-field {
                 padding: .5rem 0;
+
+                @media screen and (max-width:320px) {
+                    padding: .5rem 1rem;
+                }
+
+                label {
+                    line-height: 2rem;
+    
+                    &:after {
+                        content: " *";
+                        color: red;
+                    }
+                }
             }
 
-            label {
-                line-height: 2rem;
+            .text-field {
+                padding: .5rem 0;
 
-                &:after {
-                    content: " *";
-                    color: red;
+                @media screen and (max-width:320px) {
+                    padding: .5rem 1rem;
+                }
+
+                label {
+                    line-height: 2rem;
                 }
             }
             
@@ -807,15 +830,15 @@ padding: 2rem 0;
         }
     
         .services-1 {
-            background: linear-gradient(to top right, $primary-color, 75%, #fff);
+            background: linear-gradient(to top right, rgba($color: $primary-color, $alpha: 0.35), 25%, #fff);
         }
     
         .services-2 {
-            background: linear-gradient(360deg, $primary-color, #fff);
+            background: linear-gradient(360deg, rgba($color: $primary-color, $alpha: 0.35), #fff);
         }
     
         .services-3 {
-            background: linear-gradient(to top left, $primary-color, 75%, #fff);
+            background: linear-gradient(to top left, rgba($color: $primary-color, $alpha: 0.35), 25%, #fff);
         }
     }
 }
@@ -848,7 +871,7 @@ padding: 2rem 0;
 
         .about-info {
         grid-column: 1;
-        background: linear-gradient(to top left, $primary-color, #fff);
+        background: linear-gradient(to top left, rgba($color: $primary-color, $alpha: 0.5), 25%, #fff);
         box-shadow: 1px 1px 5px 3px $medium-color;
         border-radius: 5px;
         padding: 2rem 0;
@@ -913,16 +936,33 @@ padding: 2rem 0;
 
     .form-field {
         padding: .5rem 0;
-    }
 
-    label {
-        line-height: 2rem;
+        @media screen and (max-width:320px) {
+            padding: .5rem 1rem;
+        }
 
-        &:after {
-            content: " *";
-            color: red;
+        label {
+            line-height: 2rem;
+    
+            &:after {
+                content: " *";
+                color: red;
+            }
         }
     }
+
+    .text-field {
+        padding: .5rem 0;
+
+        @media screen and (max-width:320px) {
+            padding: .5rem 1rem;
+        }
+
+        label {
+            line-height: 2rem;
+        }
+    }
+
     
     input {
         width: 100%;
@@ -949,6 +989,11 @@ padding: 2rem 0;
         font-size: 1.2rem;
         text-align: center;
         font-weight: 600;
+        
+        @media screen and (max-width:320px) {
+            width: 90%;
+            margin-left: 14px;
+        }
     }
 
     #project-description {
@@ -994,7 +1039,7 @@ padding: 2rem 0;
 
 // My Info
 #my-info {
-    background: linear-gradient(to top, rgba($color: $primary-color, $alpha: 0.7), #fff);
+    background: linear-gradient(to top, rgba($color: $primary-color, $alpha: 0.35), #fff);
 
     .my-info-content {
     display: flex;

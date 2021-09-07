@@ -124,11 +124,13 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
   transition: all .5s ease-in-out;
-  z-index: 4; }
+  z-index: 4;
+  background: #555;
+  border-radius: 5px; }
 
 .menu-btn__burger {
   width: 30px;
@@ -243,7 +245,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  min-height: 80vh; }
   #home-hero::before {
     content: "";
     position: absolute;
@@ -323,13 +326,26 @@ p {
     list-style: disc;
     padding: 1rem;
     line-height: 1.6rem; }
+    @media screen and (max-width: 345px) {
+      #home-describe .what-side-content ul {
+        padding: 1rem 2rem; } }
   #home-describe .what-side-content .form-field {
     padding: .5rem 0; }
-  #home-describe .what-side-content label {
-    line-height: 2rem; }
-    #home-describe .what-side-content label:after {
-      content: " *";
-      color: red; }
+    @media screen and (max-width: 320px) {
+      #home-describe .what-side-content .form-field {
+        padding: .5rem 1rem; } }
+    #home-describe .what-side-content .form-field label {
+      line-height: 2rem; }
+      #home-describe .what-side-content .form-field label:after {
+        content: " *";
+        color: red; }
+  #home-describe .what-side-content .text-field {
+    padding: .5rem 0; }
+    @media screen and (max-width: 320px) {
+      #home-describe .what-side-content .text-field {
+        padding: .5rem 1rem; } }
+    #home-describe .what-side-content .text-field label {
+      line-height: 2rem; }
   #home-describe .what-side-content input {
     width: 100%;
     padding: .3rem .3rem;
@@ -660,11 +676,11 @@ p {
       align-items: center;
       margin-bottom: 2rem; }
     #services .services-grid .services-1 {
-      background: linear-gradient(to top right, #6DA4BF, 75%, #fff); }
+      background: linear-gradient(to top right, rgba(109, 164, 191, 0.35), 25%, #fff); }
     #services .services-grid .services-2 {
-      background: linear-gradient(360deg, #6DA4BF, #fff); }
+      background: linear-gradient(360deg, rgba(109, 164, 191, 0.35), #fff); }
     #services .services-grid .services-3 {
-      background: linear-gradient(to top left, #6DA4BF, 75%, #fff); }
+      background: linear-gradient(to top left, rgba(109, 164, 191, 0.35), 25%, #fff); }
 
 #about {
   padding: 2rem 0 3rem 0; }
@@ -685,7 +701,7 @@ p {
     align-items: center; }
     #about .about-grid .about-info {
       grid-column: 1;
-      background: linear-gradient(to top left, #6DA4BF, #fff);
+      background: linear-gradient(to top left, rgba(109, 164, 191, 0.5), 25%, #fff);
       box-shadow: 1px 1px 5px 3px #555;
       border-radius: 5px;
       padding: 2rem 0; }
@@ -728,11 +744,21 @@ p {
     line-height: 1.6rem; }
   #contact .form-field {
     padding: .5rem 0; }
-  #contact label {
-    line-height: 2rem; }
-    #contact label:after {
-      content: " *";
-      color: red; }
+    @media screen and (max-width: 320px) {
+      #contact .form-field {
+        padding: .5rem 1rem; } }
+    #contact .form-field label {
+      line-height: 2rem; }
+      #contact .form-field label:after {
+        content: " *";
+        color: red; }
+  #contact .text-field {
+    padding: .5rem 0; }
+    @media screen and (max-width: 320px) {
+      #contact .text-field {
+        padding: .5rem 1rem; } }
+    #contact .text-field label {
+      line-height: 2rem; }
   #contact input {
     width: 100%;
     padding: .3rem .3rem;
@@ -754,6 +780,10 @@ p {
     font-size: 1.2rem;
     text-align: center;
     font-weight: 600; }
+    @media screen and (max-width: 320px) {
+      #contact .btn-form {
+        width: 90%;
+        margin-left: 14px; } }
   #contact #project-description {
     width: 100%;
     height: auto;
@@ -783,7 +813,7 @@ p {
     width: 100%; }
 
 #my-info {
-  background: linear-gradient(to top, rgba(109, 164, 191, 0.7), #fff); }
+  background: linear-gradient(to top, rgba(109, 164, 191, 0.35), #fff); }
   #my-info .my-info-content {
     display: flex;
     flex-direction: column;
