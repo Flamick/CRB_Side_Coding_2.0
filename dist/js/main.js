@@ -33,7 +33,7 @@ itemOverlay.forEach(node => {
     node.addEventListener('click', clickEffect)
 });
 
-const mediaDevice = window.matchMedia('(max-width: 1200px)');
+const mediaDevice = window.matchMedia('(max-width: 1024px)');
 
 //* Click events toggle ".process-icon"
 const processIcon = Array.from(document.querySelectorAll('.process-icon'));

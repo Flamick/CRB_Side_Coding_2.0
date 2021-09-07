@@ -246,7 +246,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 80vh; }
+  min-height: 82vh; }
   #home-hero::before {
     content: "";
     position: absolute;
@@ -534,7 +534,43 @@ p {
       transition-duration: 350ms; }
       #home-describe #process .process-icon::before {
         transition: all 350ms; }
-      #home-describe #process .process-icon.clicked, #home-describe #process .process-icon:hover {
+      @media (hover: hover) and (pointer: fine) {
+        #home-describe #process .process-icon:hover {
+          border-radius: 5px;
+          z-index: 3;
+          transform: scale(3) translateY(20px);
+          color: #333;
+          height: 70px;
+          width: 90px;
+          border: 2px #6DA4BF solid; }
+          #home-describe #process .process-icon:hover::before {
+            opacity: 0; }
+          #home-describe #process .process-icon:hover + .inner-box {
+            opacity: 0; }
+          #home-describe #process .process-icon:hover .process-step {
+            transform: scale(0);
+            opacity: 0; }
+          #home-describe #process .process-icon:hover #effect-1 {
+            visibility: visible;
+            transform: translateY(-83.7px);
+            transition-delay: 320ms;
+            text-align: left; }
+          #home-describe #process .process-icon:hover #effect-2 {
+            visibility: visible;
+            transform: translateY(-87px);
+            transition-delay: 320ms;
+            text-align: left; }
+          #home-describe #process .process-icon:hover #effect-3 {
+            visibility: visible;
+            transform: translateY(-84px);
+            transition-delay: 320ms;
+            text-align: left; }
+          #home-describe #process .process-icon:hover #effect-4 {
+            visibility: visible;
+            transform: translateY(-83.8px);
+            transition-delay: 320ms;
+            text-align: left; } }
+      #home-describe #process .process-icon.clicked {
         border-radius: 5px;
         z-index: 3;
         transform: scale(3) translateY(20px);
@@ -542,29 +578,29 @@ p {
         height: 70px;
         width: 90px;
         border: 2px #6DA4BF solid; }
-        #home-describe #process .process-icon.clicked::before, #home-describe #process .process-icon:hover::before {
+        #home-describe #process .process-icon.clicked::before {
           opacity: 0; }
-        #home-describe #process .process-icon.clicked + .inner-box, #home-describe #process .process-icon:hover + .inner-box {
+        #home-describe #process .process-icon.clicked + .inner-box {
           opacity: 0; }
-        #home-describe #process .process-icon.clicked .process-step, #home-describe #process .process-icon:hover .process-step {
+        #home-describe #process .process-icon.clicked .process-step {
           transform: scale(0);
           opacity: 0; }
-        #home-describe #process .process-icon.clicked #effect-1, #home-describe #process .process-icon:hover #effect-1 {
+        #home-describe #process .process-icon.clicked #effect-1 {
           visibility: visible;
           transform: translateY(-83.7px);
           transition-delay: 320ms;
           text-align: left; }
-        #home-describe #process .process-icon.clicked #effect-2, #home-describe #process .process-icon:hover #effect-2 {
+        #home-describe #process .process-icon.clicked #effect-2 {
           visibility: visible;
           transform: translateY(-87px);
           transition-delay: 320ms;
           text-align: left; }
-        #home-describe #process .process-icon.clicked #effect-3, #home-describe #process .process-icon:hover #effect-3 {
+        #home-describe #process .process-icon.clicked #effect-3 {
           visibility: visible;
           transform: translateY(-84px);
           transition-delay: 320ms;
           text-align: left; }
-        #home-describe #process .process-icon.clicked #effect-4, #home-describe #process .process-icon:hover #effect-4 {
+        #home-describe #process .process-icon.clicked #effect-4 {
           visibility: visible;
           transform: translateY(-83.8px);
           transition-delay: 320ms;

@@ -235,7 +235,7 @@ p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-height: 80vh;
+        min-height: 82vh;
 
         &::before {
             content: "";
@@ -623,8 +623,57 @@ p {
                         transition: all 350ms;
                     }
 
-                    &.clicked,
-                    &:hover {
+                    @media (hover: hover) and (pointer:fine) {
+                        &:hover {
+                            border-radius: 5px;
+                            z-index: 3;
+                            transform: scale(3) translateY(20px);
+                            color: $dark-color;
+                            height: 70px;
+                            width: 90px;
+                            border: 2px $primary-color solid;;
+
+                            &::before {
+                                opacity: 0;
+                            }
+                            
+                            & + .inner-box {
+                                opacity: 0;
+                            }
+
+                            .process-step {
+                                transform: scale(0);
+                                opacity: 0;
+                            }
+                    
+                            #effect-1 {
+                                visibility: visible;
+                                transform: translateY(-83.7px);
+                                transition-delay: 320ms;
+                                text-align: left;
+                            }
+                            #effect-2 {
+                                visibility: visible;
+                                transform: translateY(-87px);
+                                transition-delay: 320ms;
+                                text-align: left;
+                            }
+                            #effect-3 {
+                                visibility: visible;
+                                transform: translateY(-84px);
+                                transition-delay: 320ms;
+                                text-align: left;
+                            }
+                            #effect-4 {
+                                visibility: visible;
+                                transform: translateY(-83.8px);
+                                transition-delay: 320ms;
+                                text-align: left;
+                            }
+                        }
+                    }
+
+                    &.clicked {
                         border-radius: 5px;
                         z-index: 3;
                         transform: scale(3) translateY(20px);
