@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.fill-container {
+    width: 100%;
+}
+
 // Text modifications
 .logo-title {
     font-weight: 500;
@@ -57,7 +61,7 @@
 
 // Buttons
 %btn-shared {
-    display: inline-block;
+    display: block;
     text-decoration: none;
     padding: 1rem 1.5rem;
     border: none;
@@ -75,12 +79,27 @@
         @extend %btn-shared;
         color: $medium-complimentary;
         background: $light-color;
+        transition: all 450ms;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background: $primary-color
+        }
     }
 
     &-dark {
         @extend %btn-shared;
         color: $light-color;
         background: $medium-complimentary;
+        transition: all 450ms;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background: $light-color;
+            color: $medium-complimentary;
+        }
     }
 }
 
@@ -94,4 +113,8 @@
 
 .lead {
     font-weight: bold;
+}
+
+.form-contents {
+    width: 100%;
 }

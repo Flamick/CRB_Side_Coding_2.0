@@ -54,6 +54,21 @@
         </div>
     </div>
 
+    <!-- Desktop navbar -->
+    <header id="main-nav">
+        <div class="container">
+            <div class="main-nav">
+                <div class="logo"><a href="index.html"><p class="logo-title"><span class="primary-color-text">C<span class="small-logo-title">RB</span></span> Side Coding</p></a></div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a class="current" href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
     <!-- Contact Us -->
     <section id="contact">
         <div class="container">
@@ -61,32 +76,34 @@
                 <h1>Contact Us</h1>
                 <div class="bottom-line"></div>
                 <h4>We'd love to hear from you. If you're interested in our services or just looking to get more information, you can fill out the form below with some basic information and a short description of your project and we'll be in touch.</h4>
-                <div class="contact-form">
-                    <form id="contact-form" action="https://formspree.io/f/mpzkkdgz" method="POST" accept-charset="UTF-8" >
-                        <div class="form-field">
-                            <label for="first-name">First Name:</label>
-                            <input type="text" name="first-name" id="first-name" placeholder="Enter First Name" required>
-                        </div>
-                        <div class="form-field">
-                            <label for="last-name">Last Name:</label>
-                            <input type="text" name="last-name" id="last-name" placeholder="Enter Last Name" required>
-                        </div>
-                        <div class="form-field">
-                            <label for="phone">Phone Number:</label>
-                            <input type="phone" name="phone" id="phone" placeholder="Enter Phone Number" required>
-                        </div>
-                        <div class="form-field">
-                            <label for="email">Email Address:</label>
-                            <input type="email" name="email" id="email" placeholder="Enter Email" required>
-                        </div>
-                        <div class="text-field">
-                            <label for="textarea">Short description of your project</label>
-                            <textarea name="textarea" id="project-description" cols="30" rows="8" placeholder="Description"></textarea>
-                        </div>
-                        <div class="g-recaptcha" data-sitekey="6LeTmEYcAAAAAPpiEVqfSxaY7cRghjb1OJwJl25C"></div>
-                        <p class="reassure">*Your information will not be sold, shared, or rented*</p>
-                        <button type="submit" class="btn btn-dark btn-form">Get Answers</button>
-                    </form>
+                <div class="form-contents">
+                    <div class="contact-form">
+                        <form id="contact-form" action="https://formspree.io/f/mpzkkdgz" method="POST" accept-charset="UTF-8" >
+                            <div class="form-field">
+                                <label for="first-name">First Name:</label>
+                                <input type="text" name="first-name" id="first-name" placeholder="Enter First Name" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="last-name">Last Name:</label>
+                                <input type="text" name="last-name" id="last-name" placeholder="Enter Last Name" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="phone">Phone Number:</label>
+                                <input type="phone" name="phone" id="phone" placeholder="Enter Phone Number" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="email">Email Address:</label>
+                                <input type="email" name="email" id="email" placeholder="Enter Email" required>
+                            </div>
+                            <div class="text-field">
+                                <label for="textarea">Short description of your project</label>
+                                <textarea name="textarea" id="project-description" cols="30" rows="8" placeholder="Description"></textarea>
+                            </div>
+                            <div class="g-recaptcha" data-sitekey="6LeTmEYcAAAAAPpiEVqfSxaY7cRghjb1OJwJl25C"></div>
+                            <p class="reassure">*Your information will not be sold, shared, or rented*</p>
+                            <button type="submit" class="btn btn-dark btn-form">Get Answers</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
