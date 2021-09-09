@@ -132,6 +132,10 @@ p {
     background-color: $medium-complimentary;
     transition: all .3s ease-in-out;
 
+    .current-mobile {
+        color: $primary-color;
+    }
+
     .navlink-1 {
         transform: translateX(100%);
         transition: 500ms all 150ms;
@@ -304,6 +308,7 @@ p {
 
                 &:hover {
                     background: $primary-color;
+                    color: $light-color;
                 }
             }
         }

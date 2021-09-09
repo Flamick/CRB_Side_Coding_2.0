@@ -190,6 +190,8 @@ p {
   z-index: 3;
   background-color: #373D40;
   transition: all .3s ease-in-out; }
+  #mobile-menu .current-mobile {
+    color: #6DA4BF; }
   #mobile-menu .navlink-1 {
     transform: translateX(100%);
     transition: 500ms all 150ms; }
@@ -312,7 +314,8 @@ p {
       border: 2px solid #f4f4f4;
       padding: .5rem; }
       #contact-top .social-contact ul .fab:hover {
-        background: #6DA4BF; }
+        background: #6DA4BF;
+        color: #f4f4f4; }
   #contact-top .direct-contact {
     display: flex;
     gap: 1rem;
