@@ -728,7 +728,7 @@ p {
 
 // Main CTA
 #cta {
-    background: linear-gradient(to top, rgba($color: $primary-color, $alpha: 0.7), #fff);
+    background: linear-gradient(to top, rgba($color: $primary-color, $alpha: 0.35), #fff);
     padding: 2rem 0 3rem 0;
     
     .cta-content {
@@ -799,6 +799,7 @@ p {
     }
 }
 
+// Legal docs
 #privacy-policy,
 #terms_and_conditions {
 line-height: 1.6rem;

@@ -14,11 +14,18 @@ if(!menuOpen) {
 }
 });
 
+//* Only if it matches screen size
+const mediaDevice = window.matchMedia('(max-width: 1024px)');
+
+
+//* Click events toggle ".process-icon"
+const processIcon = Array.from(document.querySelectorAll('.process-icon'));
+
 //* Click events toggle ".item"
 let itemOverlay = Array.from(document.querySelectorAll('.item'));
 
 const clickEffect = (e) => {
-    if(is_touch_enabled) {
+    if('ontouchstart' in window &&(mediaDevice.matches)) {
         e.preventDefault();
         clicked = document.querySelector('.item.clicked');
         const unclicked = document.querySelectorAll('.item');
@@ -33,22 +40,9 @@ itemOverlay.forEach(node => {
     node.addEventListener('click', clickEffect)
 });
 
-//* Only if it matches screen size
-const mediaDevice = window.matchMedia('(max-width: 1024px)');
-
-//* Only if its touch screen
-function is_touch_enabled() {
-    return ( 'ontouchstart' in window ) || 
-    ( navigator.maxTouchPoints > 0 ) ||
-    ( navigator.msMaxTouchPoints > 0 );
-}
-
-//* Click events toggle ".process-icon"
-const processIcon = Array.from(document.querySelectorAll('.process-icon'));
-
 //*If icons are clicked they open and close
 const iconClickEffect = (e) => {
-    if(is_touch_enabled) {
+    if('ontouchstart' in window &&(mediaDevice.matches)) {
         e.preventDefault();
 
         const clicked = document.querySelector('.process-icon.clicked');
@@ -76,7 +70,7 @@ processIcon.forEach(node => {
 document.body.addEventListener('click', function(e) {
     var el = e.target;
     const clicked = document.querySelector('.process-icon.clicked');
-    if(is_touch_enabled) {
+    if('ontouchstart' in window &&(mediaDevice.matches)) {
         do{
             if(el.classList && el.classList.contains('clicked')) {
                 return;
