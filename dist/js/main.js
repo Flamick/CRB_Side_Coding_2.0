@@ -1,25 +1,21 @@
 //* Hamburger menu
 const menuBtn = document.querySelector('.menu-btn');
 const mobileMenu = document.querySelector('#mobile-menu');
-let menuOpen = false;
+let toggle = false;
 menuBtn.addEventListener('click', () => {
-if(!menuOpen) {
-    menuBtn.classList.add('open');
-    mobileMenu.classList.add('open');
-    menuOpen = true;
-} else {
-    menuBtn.classList.remove('open');
-    mobileMenu.classList.remove('open');
-    menuOpen = false;
-}
+    if(!toggle) {
+        menuBtn.classList.add('open');
+        mobileMenu.classList.add('open');
+        toggle = true;
+    } else {
+        menuBtn.classList.remove('open');
+        mobileMenu.classList.remove('open');
+        toggle = false;
+    }
 });
 
 //* Only if it matches screen size
 const mediaDevice = window.matchMedia('(max-width: 1024px)');
-
-
-//* Click events toggle ".process-icon"
-const processIcon = Array.from(document.querySelectorAll('.process-icon'));
 
 //* Click events toggle ".item"
 let itemOverlay = Array.from(document.querySelectorAll('.item'));
@@ -40,6 +36,9 @@ itemOverlay.forEach(node => {
     node.addEventListener('click', clickEffect)
 });
 
+//* Click events toggle ".process-icon"
+const processIcon = Array.from(document.querySelectorAll('.process-icon'));
+
 //*If icons are clicked they open and close
 const iconClickEffect = (e) => {
     if('ontouchstart' in window &&(mediaDevice.matches)) {
@@ -47,17 +46,14 @@ const iconClickEffect = (e) => {
 
         const clicked = document.querySelector('.process-icon.clicked');
         const unclicked = document.querySelectorAll('.process-icon:not(.clicked)');
-        let clickedTrue = false;
 
         if(unclicked) {
             e.currentTarget.classList.add('clicked');
-            clickedTrue = true;
-            console.log(clickedTrue);
+            toggle = true;
         }
         if(clicked) {
             clicked.classList.remove('clicked');
-            clickedTrue = false;
-            console.log(clickedTrue);
+            toggle = false;
         }
     }
 }
@@ -80,12 +76,10 @@ document.body.addEventListener('click', function(e) {
     }
 });
 
-
-
 //* Recaptcha
 window.onload = function() { 
     var el = document.getElementById('g-recaptcha-response'); 
-    if (el) { 
-        el.setAttribute('required', 'required'); 
-    } 
+        if (el) { 
+            el.setAttribute('required', 'required'); 
+        } 
     }
