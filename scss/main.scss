@@ -763,6 +763,10 @@ p {
                 .close-mobile {
                     color: $primary-color;
                 }
+
+                .close-desktop {
+                    display: none;
+                }
             
                 #effect-1 {
                     padding: 0 0.5rem;

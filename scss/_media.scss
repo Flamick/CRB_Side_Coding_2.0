@@ -89,11 +89,32 @@
 
             // Process
             #process {
+                @media (hover : hover) and (pointer: fine) {
+                    .btn-describe {
+                        display: block;
+                    }
+    
+                    .btn-describe-mobile {
+                        display: none;
+                    }
+                }
+
                 .process {
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                     grid-template-rows: repeat(2, 1fr);
                     gap: 2rem;
+
+                    @media (hover: hover) and  (pointer: fine) {
+                        .close-mobile {
+                            display: none;
+                        }
+        
+                        .close-desktop {
+                            display: block;
+                            color: $primary-color;
+                        }
+                    }
                 }
             }
         }
