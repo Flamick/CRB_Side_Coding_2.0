@@ -19,6 +19,8 @@ ul {
 
 a {
     text-decoration: none;
+    transition: all 450ms;
+    -webkit-tap-highlight-color: transparent;
 
     &:visited {
         text-decoration: none;
@@ -77,6 +79,7 @@ p {
     transition: all .5s ease-in-out;
     z-index: 4;
     border-radius: 5px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .menu-btn__burger {
@@ -132,6 +135,7 @@ p {
     z-index: 3;
     background-color: $medium-complimentary;
     transition: all .3s ease-in-out;
+    -webkit-tap-highlight-color: transparent;
 
     .current-mobile {
         color: $primary-color;
@@ -306,6 +310,7 @@ p {
                 border-radius: 100px;
                 border: 2px solid $light-color;
                 padding: .5rem;
+                transition: all 450ms;
 
                 &:hover {
                     background: $primary-color;
@@ -898,6 +903,7 @@ p {
             border: 2px #f4f4f4 solid;
             border-radius: 50%;
             padding: 0.5rem;
+            transition: all 450ms;
 
             &:hover {
                 background: $primary-color;
@@ -951,6 +957,48 @@ padding: 2rem 0;
     text-decoration: none;
     font-weight: bold;
     color: $primary-color;
+    }
+}
+
+// 404 page
+#error {
+    padding: 2rem 0 3rem 0;
+
+    h1 {
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    h3 {
+        text-align: center;
+        padding: 1rem 0 2rem;
+
+        a {
+            color: $primary-color;
+        }
+    }
+
+    .error-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .small-logo-title {
+        font-size: 1.1rem;
+        font-weight: 800;
+    }
+
+    .error-img {
+        height: auto;
+        min-width: 100%;
+        padding: 1rem 0;
+
+        img {
+            min-width: 100%;
+            height: auto;
+        }
     }
 }
 
@@ -1257,6 +1305,19 @@ padding: 2rem 0;
             border-radius: 50%;
             box-shadow: 1px 1px 10px 5px $medium-color;
         }
+    }
+}
+
+// Animation disabled preference
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-delay: 0ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
     }
 }
 
