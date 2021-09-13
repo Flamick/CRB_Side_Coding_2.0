@@ -1208,9 +1208,9 @@ p {
   #main-nav {
     display: none; }
   #mobile-menu ul {
-    padding-top: 10%; }
+    padding-top: 5%; }
   #mobile-menu a {
-    padding: .3rem 1rem; } }
+    padding: 0rem 1rem; } }
 
 @media screen and (min-width: 768px) {
   #contact-top .flex-container {
