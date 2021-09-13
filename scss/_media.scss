@@ -37,6 +37,15 @@
             padding: 0rem 1rem;
         }
     }
+
+    #work {
+        .item {
+            &-text-wrap {
+                height: auto;
+                padding: 0;
+            }
+        }
+    }
 }
 
 @media screen and (min-width:768px) {
