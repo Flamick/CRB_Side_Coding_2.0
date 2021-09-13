@@ -31,7 +31,6 @@ body {
     color: $dark-color;
     width: 100%;
     min-height: 100vh;
-    overflow-x: hidden;
 }
 
 // Setting page height
@@ -410,6 +409,8 @@ p {
 
     // Home:Describe
     &-describe {
+        overflow-x: hidden;
+
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto, 1fr);
