@@ -1204,6 +1204,14 @@ p {
   #contact .text-field {
     padding: .5rem 0; } }
 
+@media screen and (max-device-width: 1024px) and (max-device-height: 500px) and (orientation: landscape) {
+  #main-nav {
+    display: none; }
+  #mobile-menu ul {
+    padding-top: 10%; }
+  #mobile-menu a {
+    padding: .3rem 1rem; } }
+
 @media screen and (min-width: 768px) {
   #contact-top .flex-container {
     flex-direction: row;

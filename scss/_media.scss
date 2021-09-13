@@ -22,6 +22,23 @@
     }
 }
 
+// Landscape
+@media screen and (max-device-width: 1024px) and (max-device-height: 500px) and (orientation: landscape) {
+    #main-nav {
+        display: none;
+    }
+
+    #mobile-menu {
+        ul {
+            padding-top: 10%;
+        }
+
+        a {
+            padding: .3rem 1rem;
+        }
+    }
+}
+
 @media screen and (min-width:768px) {
     #contact-top {
         .flex-container {
