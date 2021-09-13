@@ -116,7 +116,8 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #333;
   width: 100%;
-  min-height: 100vh; }
+  min-height: 100vh;
+  overflow-x: hidden; }
 
 #home-describe,
 #services,
@@ -396,359 +397,332 @@ p {
   z-index: 2;
   position: relative; }
 
-#home-describe {
-  overflow-x: hidden; }
-  #home-describe .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto, 1fr); }
-  #home-describe .what-content,
-  #home-describe .home-web-design,
-  #home-describe .why-content,
-  #home-describe #process-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 0; }
-    #home-describe .what-content h3,
-    #home-describe .home-web-design h3,
-    #home-describe .why-content h3,
-    #home-describe #process-1 h3 {
-      padding: 1rem 0;
-      text-align: center;
-      width: 90%; }
-      #home-describe .what-content h3 .small-text-logo,
-      #home-describe .home-web-design h3 .small-text-logo,
-      #home-describe .why-content h3 .small-text-logo,
-      #home-describe #process-1 h3 .small-text-logo {
-        font-size: .9rem;
-        font-weight: 800; }
-    #home-describe .what-content p,
-    #home-describe .home-web-design p,
-    #home-describe .why-content p,
-    #home-describe #process-1 p {
-      padding: 1rem 0; }
-    #home-describe .what-content ul,
-    #home-describe .home-web-design ul,
-    #home-describe .why-content ul,
-    #home-describe #process-1 ul {
-      padding: 1rem; }
-    #home-describe .what-content ol,
-    #home-describe .home-web-design ol,
-    #home-describe .why-content ol,
-    #home-describe #process-1 ol {
-      padding: 1rem; }
-    #home-describe .what-content li,
-    #home-describe .home-web-design li,
-    #home-describe .why-content li,
-    #home-describe #process-1 li {
-      padding: .5rem 0; }
-  #home-describe .what-content .img-container {
-    min-width: 50%;
-    height: auto;
-    display: block; }
-    #home-describe .what-content .img-container img {
-      min-width: 100%;
-      height: auto; }
-  #home-describe .what-content ul li p {
+#home-describe .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto, 1fr); }
+
+#home-describe .what-content,
+#home-describe .home-web-design,
+#home-describe .why-content,
+#home-describe #process-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0; }
+  #home-describe .what-content h3,
+  #home-describe .home-web-design h3,
+  #home-describe .why-content h3,
+  #home-describe #process-1 h3 {
+    padding: 1rem 0;
     text-align: center;
-    padding: 0; }
-  #home-describe .what-content ul li:nth-child(4) img, #home-describe .what-content ul li:nth-child(5) img {
-    padding: 2rem 0; }
-  #home-describe .what-side-content {
-    padding: 2rem 0 3rem 0; }
-    #home-describe .what-side-content .flex-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-    #home-describe .what-side-content h3 {
-      padding: 1rem 0;
-      text-align: center; }
-    #home-describe .what-side-content ul {
-      list-style: disc;
-      padding: 1rem;
-      line-height: 1.6rem; }
-      @media screen and (max-width: 345px) {
-        #home-describe .what-side-content ul {
-          padding: 1rem 2rem; } }
-    #home-describe .what-side-content .form-field {
-      padding: .5rem 0; }
-      @media screen and (max-width: 320px) {
-        #home-describe .what-side-content .form-field {
-          padding: .5rem 1rem; } }
-      #home-describe .what-side-content .form-field label {
-        line-height: 2rem; }
-        #home-describe .what-side-content .form-field label:after {
-          content: " *";
-          color: red; }
-    #home-describe .what-side-content .text-field {
-      padding: .5rem 0; }
-      @media screen and (max-width: 320px) {
-        #home-describe .what-side-content .text-field {
-          padding: .5rem 1rem; } }
-      #home-describe .what-side-content .text-field label {
-        line-height: 2rem; }
-    #home-describe .what-side-content input {
-      width: 100%;
-      padding: .3rem .3rem;
-      border: 3px #fff solid;
-      border-radius: 3px;
-      font-size: 1rem;
-      font-family: "Montserrat", sans-serif; }
-      #home-describe .what-side-content input:focus {
-        outline: none;
-        border-color: #6DA4BF; }
-    #home-describe .what-side-content .btn-form {
-      display: inline-block;
-      text-decoration: none;
-      padding: 1rem 1.5rem;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      border-radius: 10px;
-      font-size: 1.2rem;
-      text-align: center;
-      font-weight: 600; }
-    #home-describe .what-side-content #project-description {
-      width: 100%;
-      height: auto;
-      border: 3px #fff solid;
-      border-radius: 3px;
-      font-size: 1rem;
-      resize: none;
-      padding: .3rem .3rem;
-      line-height: 1.2rem;
-      font-family: "Montserrat", sans-serif; }
-      #home-describe .what-side-content #project-description:focus {
-        outline: none;
-        border-color: #6DA4BF; }
-    #home-describe .what-side-content .g-recaptcha {
-      padding-top: 1rem; }
-    #home-describe .what-side-content #g-recaptcha-response {
-      display: block !important;
-      position: absolute;
-      margin: -50px 0 0 0 !important;
-      z-index: -999999;
-      opacity: 0; }
-    #home-describe .what-side-content .reassure {
-      font-size: .75rem;
-      text-align: center;
-      padding: 1rem 0; }
-    #home-describe .what-side-content button {
-      width: 100%; }
+    width: 90%; }
+    #home-describe .what-content h3 .small-text-logo,
+    #home-describe .home-web-design h3 .small-text-logo,
+    #home-describe .why-content h3 .small-text-logo,
+    #home-describe #process-1 h3 .small-text-logo {
+      font-size: .9rem;
+      font-weight: 800; }
+  #home-describe .what-content p,
+  #home-describe .home-web-design p,
+  #home-describe .why-content p,
+  #home-describe #process-1 p {
+    padding: 1rem 0; }
+  #home-describe .what-content ul,
   #home-describe .home-web-design ul,
-  #home-describe .why-content ul {
+  #home-describe .why-content ul,
+  #home-describe #process-1 ul {
     padding: 1rem; }
-    #home-describe .home-web-design ul li,
-    #home-describe .why-content ul li {
-      padding: .5rem 0; }
-  #home-describe .home-web-design {
-    position: relative; }
-    #home-describe .home-web-design .flex-container p {
-      text-align: center; }
-      #home-describe .home-web-design .flex-container p:last-child {
-        padding-top: 0; }
-    #home-describe .home-web-design .flex-container .principle-list {
-      padding-bottom: 0; }
-    #home-describe .home-web-design .principle-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-    #home-describe .home-web-design ul li:first-child {
-      padding-bottom: 0; }
-      #home-describe .home-web-design ul li:first-child p {
-        padding: 0; }
-    #home-describe .home-web-design ul li:nth-child(2) {
+  #home-describe .what-content ol,
+  #home-describe .home-web-design ol,
+  #home-describe .why-content ol,
+  #home-describe #process-1 ol {
+    padding: 1rem; }
+  #home-describe .what-content li,
+  #home-describe .home-web-design li,
+  #home-describe .why-content li,
+  #home-describe #process-1 li {
+    padding: .5rem 0; }
+
+#home-describe .what-content .img-container {
+  min-width: 50%;
+  height: auto;
+  display: block; }
+  #home-describe .what-content .img-container img {
+    min-width: 100%;
+    height: auto; }
+
+#home-describe .what-content ul li p {
+  text-align: center;
+  padding: 0; }
+
+#home-describe .what-content ul li:nth-child(4) img, #home-describe .what-content ul li:nth-child(5) img {
+  padding: 2rem 0; }
+
+#home-describe .what-side-content {
+  padding: 2rem 0 3rem 0; }
+  #home-describe .what-side-content .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #home-describe .what-side-content h3 {
+    padding: 1rem 0;
+    text-align: center; }
+  #home-describe .what-side-content ul {
+    list-style: disc;
+    padding: 1rem;
+    line-height: 1.6rem; }
+    @media screen and (max-width: 345px) {
+      #home-describe .what-side-content ul {
+        padding: 1rem 2rem; } }
+  #home-describe .what-side-content .form-field {
+    padding: .5rem 0; }
+    @media screen and (max-width: 320px) {
+      #home-describe .what-side-content .form-field {
+        padding: .5rem 1rem; } }
+    #home-describe .what-side-content .form-field label {
+      line-height: 2rem; }
+      #home-describe .what-side-content .form-field label:after {
+        content: " *";
+        color: red; }
+  #home-describe .what-side-content .text-field {
+    padding: .5rem 0; }
+    @media screen and (max-width: 320px) {
+      #home-describe .what-side-content .text-field {
+        padding: .5rem 1rem; } }
+    #home-describe .what-side-content .text-field label {
+      line-height: 2rem; }
+  #home-describe .what-side-content input {
+    width: 100%;
+    padding: .3rem .3rem;
+    border: 3px #fff solid;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif; }
+    #home-describe .what-side-content input:focus {
+      outline: none;
+      border-color: #6DA4BF; }
+  #home-describe .what-side-content .btn-form {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600; }
+  #home-describe .what-side-content #project-description {
+    width: 100%;
+    height: auto;
+    border: 3px #fff solid;
+    border-radius: 3px;
+    font-size: 1rem;
+    resize: none;
+    padding: .3rem .3rem;
+    line-height: 1.2rem;
+    font-family: "Montserrat", sans-serif; }
+    #home-describe .what-side-content #project-description:focus {
+      outline: none;
+      border-color: #6DA4BF; }
+  #home-describe .what-side-content .g-recaptcha {
+    padding-top: 1rem; }
+  #home-describe .what-side-content #g-recaptcha-response {
+    display: block !important;
+    position: absolute;
+    margin: -50px 0 0 0 !important;
+    z-index: -999999;
+    opacity: 0; }
+  #home-describe .what-side-content .reassure {
+    font-size: .75rem;
+    text-align: center;
+    padding: 1rem 0; }
+  #home-describe .what-side-content button {
+    width: 100%; }
+
+#home-describe .home-web-design ul,
+#home-describe .why-content ul {
+  padding: 1rem; }
+  #home-describe .home-web-design ul li,
+  #home-describe .why-content ul li {
+    padding: .5rem 0; }
+
+#home-describe .home-web-design {
+  position: relative; }
+  #home-describe .home-web-design .flex-container p {
+    text-align: center; }
+    #home-describe .home-web-design .flex-container p:last-child {
       padding-top: 0; }
-      #home-describe .home-web-design ul li:nth-child(2) h3 {
-        padding-top: 0; }
-      #home-describe .home-web-design ul li:nth-child(2) p {
-        padding-top: 0; }
-    #home-describe .home-web-design ul li:nth-child(3) {
-      padding-top: 1rem; }
-      #home-describe .home-web-design ul li:nth-child(3) p {
-        padding-top: 0; }
-    #home-describe .home-web-design::before {
-      content: "";
-      position: absolute;
-      background: #f4f4f4;
-      width: 100vw;
-      height: 100%;
-      top: 0;
-      z-index: -1;
-      overflow-x: hidden; }
-  #home-describe .why-content {
-    background: #f4f4f4; }
-    #home-describe .why-content ul {
-      list-style: disc; }
-  #home-describe .why-side-content {
+  #home-describe .home-web-design .flex-container .principle-list {
+    padding-bottom: 0; }
+  #home-describe .home-web-design .principle-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  #home-describe .home-web-design ul li:first-child {
+    padding-bottom: 0; }
+    #home-describe .home-web-design ul li:first-child p {
+      padding: 0; }
+  #home-describe .home-web-design ul li:nth-child(2) {
+    padding-top: 0; }
+    #home-describe .home-web-design ul li:nth-child(2) h3 {
+      padding-top: 0; }
+    #home-describe .home-web-design ul li:nth-child(2) p {
+      padding-top: 0; }
+  #home-describe .home-web-design ul li:nth-child(3) {
+    padding-top: 1rem; }
+    #home-describe .home-web-design ul li:nth-child(3) p {
+      padding-top: 0; }
+  #home-describe .home-web-design::before {
+    content: "";
+    position: absolute;
+    background: #f4f4f4;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    overflow-x: hidden; }
+
+#home-describe .why-content {
+  background: #f4f4f4; }
+  #home-describe .why-content ul {
+    list-style: disc; }
+
+#home-describe .why-side-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #B0C1CA;
+  padding: 2rem 0 3rem 0;
+  color: set-text-color(#6DA4BF); }
+  #home-describe .why-side-content h3 {
+    padding: 1rem 0;
+    text-align: center; }
+  #home-describe .why-side-content ul {
+    list-style: disc;
+    padding: 1rem;
+    line-height: 1.6rem; }
+    #home-describe .why-side-content ul li {
+      padding: 0.5rem 0; }
+
+#home-describe #process {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  #home-describe #process h2 {
+    padding-bottom: 2rem; }
+  #home-describe #process .effect-text p {
+    line-height: .42rem;
+    font-size: .33rem;
+    text-align: center;
+    padding: .1rem 0; }
+  #home-describe #process .lead {
+    padding-top: 2rem; }
+  #home-describe #process .btn-describe {
+    display: none; }
+  #home-describe #process .btn-describe-mobile {
+    font-size: 1.2rem;
+    width: 80%; }
+  #home-describe #process .process {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #B0C1CA;
-    padding: 2rem 0 3rem 0;
-    color: set-text-color(#6DA4BF); }
-    #home-describe .why-side-content h3 {
-      padding: 1rem 0;
-      text-align: center; }
-    #home-describe .why-side-content ul {
-      list-style: disc;
-      padding: 1rem;
-      line-height: 1.6rem; }
-      #home-describe .why-side-content ul li {
-        padding: 0.5rem 0; }
-  #home-describe #process {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center; }
-    #home-describe #process h2 {
-      padding-bottom: 2rem; }
-    #home-describe #process .effect-text p {
-      line-height: .42rem;
-      font-size: .33rem;
-      text-align: center;
-      padding: .1rem 0; }
-    #home-describe #process .lead {
-      padding-top: 2rem; }
-    #home-describe #process .btn-describe {
+    text-align: center;
+    height: 100%;
+    width: 100%; }
+    #home-describe #process .process .close-mobile {
+      color: #6DA4BF; }
+    #home-describe #process .process .close-desktop {
       display: none; }
-    #home-describe #process .btn-describe-mobile {
-      font-size: 1.2rem;
-      width: 80%; }
-    #home-describe #process .process {
+    #home-describe #process .process #effect-1 {
+      padding: 0 0.5rem;
+      margin: 0;
+      color: #f4f4f4;
+      visibility: hidden;
+      text-align: center;
+      transition: all ease-in;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400; }
+    #home-describe #process .process #effect-2 {
+      padding: 0 0.5rem;
+      margin: 0;
+      color: #f4f4f4;
+      visibility: hidden;
+      text-align: center;
+      transition: all ease-in;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400; }
+    #home-describe #process .process #effect-3 {
+      padding: 0 0.5rem;
+      margin: 0;
+      color: #f4f4f4;
+      visibility: hidden;
+      text-align: center;
+      transition: all ease-in;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400; }
+    #home-describe #process .process #effect-4 {
+      padding: 0 0.5rem;
+      margin: 0;
+      color: #f4f4f4;
+      visibility: hidden;
+      text-align: center;
+      transition: all ease-in;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400; }
+    #home-describe #process .process .outer-box {
+      position: relative;
+      height: 240px;
+      width: 100%; }
+    #home-describe #process .process .inner-box {
+      position: absolute;
+      top: 45%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 1;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      transition: all 350ms; }
+      #home-describe #process .process .inner-box h3 {
+        font-weight: 500;
+        padding-top: 2rem; }
+    #home-describe #process .process-step {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 1.5rem;
+      background: #6DA4BF;
+      color: #f4f4f4;
+      border-radius: 50%;
+      height: 2rem;
+      width: 2rem;
+      line-height: 2rem;
+      transition-duration: 300ms; }
+    #home-describe #process .process-icon {
+      border-radius: 50%;
+      border: 3px #6DA4BF solid;
+      background: #333;
+      color: #f4f4f4;
+      height: 90px;
+      width: 90px;
+      line-height: 90px;
       text-align: center;
-      height: 100%;
-      width: 100%; }
-      #home-describe #process .process .close-mobile {
-        color: #6DA4BF; }
-      #home-describe #process .process .close-desktop {
-        display: none; }
-      #home-describe #process .process #effect-1 {
-        padding: 0 0.5rem;
-        margin: 0;
-        color: #f4f4f4;
-        visibility: hidden;
-        text-align: center;
-        transition: all ease-in;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 400; }
-      #home-describe #process .process #effect-2 {
-        padding: 0 0.5rem;
-        margin: 0;
-        color: #f4f4f4;
-        visibility: hidden;
-        text-align: center;
-        transition: all ease-in;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 400; }
-      #home-describe #process .process #effect-3 {
-        padding: 0 0.5rem;
-        margin: 0;
-        color: #f4f4f4;
-        visibility: hidden;
-        text-align: center;
-        transition: all ease-in;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 400; }
-      #home-describe #process .process #effect-4 {
-        padding: 0 0.5rem;
-        margin: 0;
-        color: #f4f4f4;
-        visibility: hidden;
-        text-align: center;
-        transition: all ease-in;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 400; }
-      #home-describe #process .process .outer-box {
-        position: relative;
-        height: 240px;
-        width: 100%; }
-      #home-describe #process .process .inner-box {
-        position: absolute;
-        top: 45%;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        z-index: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+      position: relative;
+      transition: all 350ms ease;
+      transition-duration: 350ms; }
+      #home-describe #process .process-icon::before {
         transition: all 350ms; }
-        #home-describe #process .process .inner-box h3 {
-          font-weight: 500;
-          padding-top: 2rem; }
-      #home-describe #process .process-step {
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 1.5rem;
-        background: #6DA4BF;
-        color: #f4f4f4;
-        border-radius: 50%;
-        height: 2rem;
-        width: 2rem;
-        line-height: 2rem;
-        transition-duration: 300ms; }
-      #home-describe #process .process-icon {
-        border-radius: 50%;
-        border: 3px #6DA4BF solid;
-        background: #333;
-        color: #f4f4f4;
-        height: 90px;
-        width: 90px;
-        line-height: 90px;
-        text-align: center;
-        position: relative;
-        transition: all 350ms ease;
-        transition-duration: 350ms; }
-        #home-describe #process .process-icon::before {
-          transition: all 350ms; }
-        @media (hover: hover) and (pointer: fine) {
-          #home-describe #process .process-icon:hover {
-            border-radius: 5px;
-            z-index: 3;
-            transform: scale(3) translateY(20px);
-            color: #333;
-            height: 70px;
-            width: 90px;
-            border: 2px #6DA4BF solid; }
-            #home-describe #process .process-icon:hover::before {
-              opacity: 0; }
-            #home-describe #process .process-icon:hover + .inner-box {
-              opacity: 0; }
-            #home-describe #process .process-icon:hover .process-step {
-              transform: scale(0);
-              opacity: 0; }
-            #home-describe #process .process-icon:hover #effect-1 {
-              visibility: visible;
-              transform: translateY(-83.7px);
-              transition-delay: 320ms;
-              text-align: left; }
-            #home-describe #process .process-icon:hover #effect-2 {
-              visibility: visible;
-              transform: translateY(-87px);
-              transition-delay: 320ms;
-              text-align: left; }
-            #home-describe #process .process-icon:hover #effect-3 {
-              visibility: visible;
-              transform: translateY(-84px);
-              transition-delay: 320ms;
-              text-align: left; }
-            #home-describe #process .process-icon:hover #effect-4 {
-              visibility: visible;
-              transform: translateY(-83.8px);
-              transition-delay: 320ms;
-              text-align: left; } }
-        #home-describe #process .process-icon.clicked {
+      @media (hover: hover) and (pointer: fine) {
+        #home-describe #process .process-icon:hover {
           border-radius: 5px;
           z-index: 3;
           transform: scale(3) translateY(20px);
@@ -756,33 +730,68 @@ p {
           height: 70px;
           width: 90px;
           border: 2px #6DA4BF solid; }
-          #home-describe #process .process-icon.clicked::before {
+          #home-describe #process .process-icon:hover::before {
             opacity: 0; }
-          #home-describe #process .process-icon.clicked + .inner-box {
+          #home-describe #process .process-icon:hover + .inner-box {
             opacity: 0; }
-          #home-describe #process .process-icon.clicked .process-step {
+          #home-describe #process .process-icon:hover .process-step {
             transform: scale(0);
             opacity: 0; }
-          #home-describe #process .process-icon.clicked #effect-1 {
+          #home-describe #process .process-icon:hover #effect-1 {
             visibility: visible;
             transform: translateY(-83.7px);
             transition-delay: 320ms;
             text-align: left; }
-          #home-describe #process .process-icon.clicked #effect-2 {
+          #home-describe #process .process-icon:hover #effect-2 {
             visibility: visible;
             transform: translateY(-87px);
             transition-delay: 320ms;
             text-align: left; }
-          #home-describe #process .process-icon.clicked #effect-3 {
+          #home-describe #process .process-icon:hover #effect-3 {
             visibility: visible;
             transform: translateY(-84px);
             transition-delay: 320ms;
             text-align: left; }
-          #home-describe #process .process-icon.clicked #effect-4 {
+          #home-describe #process .process-icon:hover #effect-4 {
             visibility: visible;
             transform: translateY(-83.8px);
             transition-delay: 320ms;
-            text-align: left; }
+            text-align: left; } }
+      #home-describe #process .process-icon.clicked {
+        border-radius: 5px;
+        z-index: 3;
+        transform: scale(3) translateY(20px);
+        color: #333;
+        height: 70px;
+        width: 90px;
+        border: 2px #6DA4BF solid; }
+        #home-describe #process .process-icon.clicked::before {
+          opacity: 0; }
+        #home-describe #process .process-icon.clicked + .inner-box {
+          opacity: 0; }
+        #home-describe #process .process-icon.clicked .process-step {
+          transform: scale(0);
+          opacity: 0; }
+        #home-describe #process .process-icon.clicked #effect-1 {
+          visibility: visible;
+          transform: translateY(-83.7px);
+          transition-delay: 320ms;
+          text-align: left; }
+        #home-describe #process .process-icon.clicked #effect-2 {
+          visibility: visible;
+          transform: translateY(-87px);
+          transition-delay: 320ms;
+          text-align: left; }
+        #home-describe #process .process-icon.clicked #effect-3 {
+          visibility: visible;
+          transform: translateY(-84px);
+          transition-delay: 320ms;
+          text-align: left; }
+        #home-describe #process .process-icon.clicked #effect-4 {
+          visibility: visible;
+          transform: translateY(-83.8px);
+          transition-delay: 320ms;
+          text-align: left; }
 
 #cta {
   background: linear-gradient(to top, rgba(109, 164, 191, 0.35), #fff);
