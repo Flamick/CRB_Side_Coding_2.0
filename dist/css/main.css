@@ -1313,7 +1313,7 @@ p {
       grid-column: 1 / span 2; }
     #home-describe .grid-container .what-side-content {
       grid-column: 3;
-      margin: auto 0;
+      justify-self: flex-start;
       border-radius: 10px;
       box-shadow: 1px 1px 5px 3px #555; }
     #home-describe .grid-container .home-web-design {
